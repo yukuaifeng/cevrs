@@ -8,6 +8,7 @@
 from __future__ import unicode_literals
 
 from django.db import models
+from django.db.models import Q
 
 
 class CityRank(models.Model):
@@ -86,6 +87,19 @@ class GradeAll(models.Model):
     rank = models.IntegerField(blank=True, null=True)
     clazz = models.CharField(max_length=10, blank=True, null=True)
 
+    def get_fifty_schools(self, kind, rank):
+        schools = GradeAll.objects.filter(Q(kind=kind) | Q(rank__gt=rank)).values('school').order_by('rank')[0:50]
+        return schools
+
+    def get_school_info(self, school, rank, kind):
+        schooltmp = GradeAll.objects.filter(Q(school=school) | Q(rank__gt=rank)).first()
+        clazz = schooltmp.clazz
+        school_num = school.number
+        school_info = GradeAll.objects.filter(Q(number=school_num) | Q(kind=kind) | Q(clazz=clazz) | Q(year__range=[2014, 2018]))
+        return school_info
+
+    def get_school_ranks(self, years, school):
+        
     class Meta:
         managed = False
         db_table = 'grade_all'
@@ -119,7 +133,7 @@ class RankLine(models.Model):
 
 
 class School(models.Model):
-    id = models.CharField(max_length=50, blank=True, null=True)
+    id = models.CharField(max_length=50, blank=True, primary_key=True)
     name = models.CharField(max_length=50, blank=True, null=True)
     province = models.CharField(max_length=50, blank=True, null=True)
     area = models.CharField(max_length=50, blank=True, null=True)
@@ -138,7 +152,8 @@ class School(models.Model):
 
 class Schoolgrade(models.Model):
     school = models.CharField(max_length=255, blank=True, null=True)
-    citygrade = models.FloatField(db_column='cityGrade', blank=True, null=True)  # Field name made lowercase.
+    citygrade = models.FloatField(db_column='cityGrade', blank=True, null=True)
+    # Field name made lowercase.
     strength = models.FloatField(blank=True, null=True)
     employment = models.FloatField(blank=True, null=True)
     fund = models.FloatField(blank=True, null=True)
@@ -165,6 +180,15 @@ class StudentNumber(models.Model):
     stu_num = models.IntegerField()
     li_num = models.IntegerField()
     wen_num = models.IntegerField()
+
+    def get_student_num(self, year, kind):
+        num_temp = StudentNumber.objects.filter(year=year).first()
+        if kind == "理":
+            student_num = num_temp.li_num
+        else:
+            student_num = num_temp.wen_num
+        return student_num
+        
 
     class Meta:
         managed = False

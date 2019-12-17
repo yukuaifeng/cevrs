@@ -6,7 +6,7 @@ from .serializers import GradeAllSerializer, ControlLineSerializer, StudentNumbe
 
 # Create your views here.
 def index(request):
-    return HttpResponse("Hello, world. Success get in views")
-    # if(request.method == 'POST'):
-    #     print("yes")
-    #     return HttpResponse("Hello, world. Success get in views")
+    # return HttpResponse("Hello, world. Success get in views")
+    if(request.method == 'POST'):
+        print(request.POST.get('formInput'))
+        return HttpResponse("Hello, world. Success get in views")
