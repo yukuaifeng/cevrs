@@ -32,6 +32,26 @@ class ControlLine(models.Model):
     ctrl_line = models.IntegerField(blank=True, null=True)
     ctrl_rank = models.IntegerField(blank=True, null=True)
 
+    def get_rank_by_year(self, year, kind, school_rank):
+        ranks = ControlLine.objects.filter(Q(year=year), Q(kind=kind), Q(ctrl_rank__gt=school_rank)).first()
+        return ranks
+
+    def get_ranks_by_clazz(self, kind, clazz):
+        rank_list = []
+        ranks = ControlLine.objects.filter(Q(kind=kind), Q(clazz=clazz), Q(year__range=[2015, 2018]))
+        for rank in ranks:
+            rank_list.append(rank.ctrl_rank)
+        return rank_list
+
+    def get_grades_by_clazz(self, kind, clazz):
+        grade_list = []
+        if clazz == '第三批':
+            clazz = '第三批A'
+        ranks = ControlLine.objects.filter(Q(kind=kind), Q(clazz=clazz))
+        for rank in ranks:
+            grade_list.append(rank.ctrl_line)
+        return grade_list
+
     class Meta:
         managed = False
         db_table = 'control_line'
@@ -88,17 +108,41 @@ class GradeAll(models.Model):
     clazz = models.CharField(max_length=10, blank=True, null=True)
 
     def get_fifty_schools(self, kind, rank):
-        schools = GradeAll.objects.filter(Q(kind=kind) | Q(rank__gt=rank)).values('school').order_by('rank')[0:50]
+        schools = GradeAll.objects.raw("SELECT * FROM grade_all WHERE kind = %s AND rank > %s "
+                                       "GROUP BY school ORDER BY rank LIMIT 50", [kind, rank])
         return schools
 
     def get_school_info(self, school, rank, kind):
-        schooltmp = GradeAll.objects.filter(Q(school=school) | Q(rank__gt=rank)).first()
+        # 根据学校的编号获取该校的信息
+        schooltmp = GradeAll.objects.filter(Q(school=school), Q(rank__gt=rank)).first()
         clazz = schooltmp.clazz
-        school_num = school.number
-        school_info = GradeAll.objects.filter(Q(number=school_num) | Q(kind=kind) | Q(clazz=clazz) | Q(year__range=[2014, 2018]))
+        school_num = schooltmp.number
+        school_info = GradeAll.objects.filter(Q(number=school_num), Q(kind=kind), Q(clazz=clazz), Q(year__range=[2014, 2018]))
         return school_info
 
-    def get_school_ranks(self, years, school):
+    def get_school_number(self, school, kind):
+        school_template = GradeAll.objects.filter(Q(school=school), Q(kind=kind)).first()
+        school_number = school_template.number
+        return school_number
+
+    def get_exact_info(self, number, clazz, kind, year):
+        schools = GradeAll.objects.filter(Q(number=number), Q(kind=kind), Q(clazz=clazz), Q(year=year))
+        return schools
+
+    def get_school_ranks(self, school, kind, school_number):
+        ranks = []
+        schools = GradeAll.objects.filter(Q(school=school), Q(kind=kind), Q(number=school_number), Q(year__range=[2014, 2018]))
+        for school in schools:
+            ranks.append(school.rank)
+        return ranks
+
+    def get_school_grades(self, school, kind, school_number):
+        grades = []
+        schools = GradeAll.objects.filter(Q(school=school), Q(kind=kind), Q(number=school_number))
+        for school in schools:
+            grades.append(school.grade)
+        grades = grades[::-1]
+        return grades
         
     class Meta:
         managed = False
@@ -127,6 +171,10 @@ class RankLine(models.Model):
     rank = models.IntegerField(blank=True, null=True)
     clazz = models.TextField(blank=True, null=True)
 
+    def get_rank(self, year, kind):
+        rank_line = RankLine.objects.filter(Q(year=year), Q(kind=kind)).first()
+        rank = rank_line.rank
+        return rank
     class Meta:
         managed = False
         db_table = 'rank_line'
@@ -157,6 +205,10 @@ class Schoolgrade(models.Model):
     strength = models.FloatField(blank=True, null=True)
     employment = models.FloatField(blank=True, null=True)
     fund = models.FloatField(blank=True, null=True)
+
+    def get_school_grade(self, school):
+        school_grades = Schoolgrade.objects.filter(school=school).first()
+        return school_grades
 
     class Meta:
         managed = False
