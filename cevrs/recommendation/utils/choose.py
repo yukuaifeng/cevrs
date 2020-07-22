@@ -1,5 +1,6 @@
 import math
 import numpy as np
+import pandas as pd
 from skfuzzy.cluster import cmeans
 from ..models import GradeAll, ControlLine, StudentNumber, Schoolgrade
 import pysnooper
@@ -24,7 +25,6 @@ def choose_school(rank, radio, first_value, second_value, third_value, fourth_va
     # 想办法找到排名最靠前的两个因素，是哪两个
     time_list = []
     for key in sorted_dict:
-        print(key.values())
         for v in key.values():
             time_list.append(v)
 
@@ -36,7 +36,6 @@ def choose_school(rank, radio, first_value, second_value, third_value, fourth_va
 
     riskly_results, surely_results, definite_results = assess_school(fifty_schools, rank, kind, risk_number,
                                                                      surely_number, def_number, time_list, num1, num2)
-    print(riskly_results, surely_results, definite_results)
     return riskly_results, surely_results, definite_results
 
 
@@ -56,6 +55,9 @@ def assess_school(schools, rank, kind, risk_number, surely_number, def_number, t
     surely_results = []
     definite_results = []
 
+    # 存放所有院校的评估数据
+    school_quality = []
+
     stu_template = StudentNumber()
     grade_template = GradeAll()
     control_template = ControlLine()
@@ -64,7 +66,6 @@ def assess_school(schools, rank, kind, risk_number, surely_number, def_number, t
         if school.school == "桂林理工大学" or '中外合作办学' in school.school or school.school == "天津师范大学" or school.school == "南京审计大学":
             continue
         selected_schools.append(school.school)
-    print(len(selected_schools))
 
     for school in selected_schools:
         # 首先通过学校的名称和满足rank的排名来获取学习的编号和批次
@@ -110,6 +111,8 @@ def assess_school(schools, rank, kind, risk_number, surely_number, def_number, t
         num_variances = compute_variance(ranks, stu_nums)
         rank_variances = compute_variance(ranks, ctrl_ranks)
 
+        single_school_quality = [school, number, distance, num_variances, rank_variances]
+
         # 如果学校的录取排名与目标排名差距过大，是因为目标名次数值太小，所以差距越小应该取值越小
         # 但是要归一化到0-1的范围之中
         if distance > 1:
@@ -136,8 +139,24 @@ def assess_school(schools, rank, kind, risk_number, surely_number, def_number, t
         else:
             rate = (1 - distance) * 0.12 + number * 0.78 + (1 - num_variances) * 0.05 + (1 - rank_variances) * 0.05
 
+        # print(school, distance, num_variances, rank_variances)
         rate = '%.2f%%' % (rate * 100)
+        school_quality.append(single_school_quality)
         rates.append(rate)
+
+    # school_quality_df = pd.DataFrame(school_quality,
+    #                                  columns=['school', 'number', 'distance', 'num_variances', 'rank_variances'])
+    # school_quality_df.to_csv('D:\硕士毕业论文\论文\school_quality.csv', encoding='utf_8_sig')
+    #
+    # school_grade_template = Schoolgrade()
+    # school_grade_list = []
+    # for single_school in school_quality:
+    #     school = single_school[0]
+    #     sg = school_grade_template.get_school_grade(school)
+    #     school_grade = [sg.school, sg.citygrade, sg.strength, sg.employment, sg.fund]
+    #     school_grade_list.append(school_grade)
+    # school_grade_df = pd.DataFrame(school_grade_list, columns=['school', 'citygrade', 'strength', 'employment', 'fund'])
+    # school_grade_df.to_csv('D:\硕士毕业论文\论文\school_grade.csv', encoding='utf_8_sig', index=False)
 
     clazz_dict = dict(zip(selected_schools, clazzs))
     school_dict = dict(zip(selected_schools, rates))
@@ -152,7 +171,28 @@ def assess_school(schools, rank, kind, risk_number, surely_number, def_number, t
     surely_dict = sorted(surely_dict.items(), key=lambda x: x[1], reverse=False)
     definite_dict = sorted(definite_dict.items(), key=lambda x: x[1], reverse=False)
 
-    print(riskly_dict, surely_dict, definite_dict)
+    risky_list = []
+    surely_list = []
+    definite_list = []
+    for key in riskly_dict:
+        risky_list.append(key)
+    for key in surely_dict:
+        surely_list.append(key)
+    for key in definite_dict:
+        definite_list.append(key)
+    if len(risky_list) > 0:
+        risk_a, risk_c, risk_h, risk_r = compute_results(rank, risky_list)
+        print(risk_a, risk_c, risk_h, risk_r)
+    if len(surely_list) > 0:
+        surely_a, surely_c, surely_h, surely_r = compute_results(rank, surely_list)
+        print(surely_a, surely_c, surely_h, surely_r)
+    if len(definite_list) > 0:
+        definite_a, definite_c, definite_h, definite_r = compute_results(rank, definite_list)
+        print(definite_a, definite_c, definite_h, definite_r)
+    print(risky_list, surely_list, definite_list)
+    print(len(risky_list), len(surely_list), len(definite_list))
+
+
 
     # 交给聚类程序去参与聚类的过程
     riskly_dict = cluster(riskly_dict, time_list, num1, num2)
@@ -263,7 +303,7 @@ def compute_distance(ranks, rank):
 # @pysnooper.snoop()
 def compute_variance(ranks, targets):
     # 这里是要求所有的与高考的距离或者是与省控线的rank值的标准方差
-    listtmp = [ranks[i] - targets[i] for i in range(len(ranks))]
+    listtmp = [ranks[i]/targets[i] for i in range(len(ranks))]
     listtmp = [listtmp[i]/sum(listtmp) for i in range(len(listtmp))]
     if len(listtmp) == 1:
         variance = 1
@@ -295,6 +335,7 @@ def cluster(schools, time_list, num1, num2):
 
     # 这里将得到的list根据分类的结果，进行分类和匹配，又将原来的学校得分重新排序起来
     kindlist = [kind1, kind2, kind3]
+    # 得到用户排序的最前面两个目标
     target_1 = kindlist[kind_num1]
     target_2 = kindlist[kind_num2]
     kindlist.remove(target_1)
@@ -320,7 +361,7 @@ def classify(school_grade_list, school_names, num1, num2):
     school_array.dtype = np.float64
     school_array = school_array.T
 
-    center, u, u0, d, jm, p, fpc = cmeans(school_array, m=1.5, c=3, error=0.005, maxiter=1000)
+    center, u, u0, d, jm, p, fpc = cmeans(school_array, m=1.1, c=3, error=0.005, maxiter=1000)
 
     print(center)
     print(fpc)
@@ -341,12 +382,31 @@ def classify(school_grade_list, school_names, num1, num2):
     kind_num1 = target_list1.index(max(target_list1))
     kind_num2 = target_list2.index(max(target_list2))
 
+    if kind_num1 == kind_num2:
+        target_list1.remove(max(target_list1))
+        kind_num2 = target_list1.index(max(target_list1))
+
     for i in range(0, len(school_grade_list)):
         if label[i] == 0:
             kind1.append([school_names[i], label[i]])
         elif label[i] == 1:
             kind2.append([school_names[i], label[i]])
-        else:
+        elif label[i] == 2:
             kind3.append([school_names[i], label[i]])
 
     return kind1, kind2, kind3, kind_num1, kind_num2
+
+
+def compute_results(target, school_list):
+    a = 0
+    c = 0
+    grade2019 = pd.read_csv("D:\Evolution\湖南省2019年理科一本二本各高校录取分数线与排名.csv", index_col=False, encoding='utf_8_sig')
+    for s in school_list:
+        # print(grade2019['rank'][grade2019['院校名称'] == s[0]].values)
+        if grade2019['rank'][grade2019['院校名称'] == s[0]].values.any():
+            rank = grade2019['rank'][grade2019['院校名称'] == s[0]].values[0]
+            if rank > target:
+                a += 1
+                if (rank-target)/target < 0.1:
+                    c += 1
+    return a, c, a/len(school_list), c/len(school_list)

@@ -25,7 +25,7 @@ SECRET_KEY = 'x)ogn!p&-x(-_moiv15yy2uzhmq!h$35!4%cn7hu42y)co&cx='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -57,7 +57,7 @@ ROOT_URLCONF = 'cevrs.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'dist')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -71,6 +71,19 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'cevrs.wsgi.application'
+
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'dist/static'),
+]
+# STATICFILES_DIRS = [
+#     ("css", os.path.join(STATIC_ROOT, 'css')),
+#     ("img", os.path.join(STATIC_ROOT, 'img')),
+#     ("js", os.path.join(STATIC_ROOT, 'js')),
+# ]
+
 
 
 # Database
@@ -124,7 +137,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
-STATIC_URL = '/static/'
 
 CORS_ALLOW_CREDENTIALS = True
 CORS_ORIGIN_ALLOW_ALL = True
