@@ -195,9 +195,9 @@ def assess_school(schools, rank, kind, risk_number, surely_number, def_number, t
 
 
     # 交给聚类程序去参与聚类的过程
-    riskly_dict = cluster(riskly_dict, time_list, num1, num2)
-    surely_dict = cluster(surely_dict, time_list, num1, num2)
-    definite_dict = cluster(definite_dict, time_list, num1, num2)
+    # riskly_dict = cluster(riskly_dict, time_list, num1, num2)
+    # surely_dict = cluster(surely_dict, time_list, num1, num2)
+    # definite_dict = cluster(definite_dict, time_list, num1, num2)
     # 如果数目不够，就去找上面那个去借，再删除掉,避免重复
     # 所以将最远离目标的target的值借到上一个等级
 

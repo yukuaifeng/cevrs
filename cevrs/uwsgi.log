@@ -1,0 +1,3592 @@
+*** Starting uWSGI 2.0.18 (64bit) on [Tue Feb 25 22:24:44 2020] ***
+compiled with version: 7.4.0 on 10 February 2020 10:53:21
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-0-7-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/cevrs/cevrs
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/cevrs/cevrs
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 7080
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000/ fd 3
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Nov  7 2019, 10:44:02)  [GCC 8.3.0]
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x5634da63bbe0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 291616 bytes (284 KB) for 4 cores
+*** Operational MODE: preforking ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x5634da63bbe0 pid: 15981 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI worker 1 (pid: 15981, cores: 1)
+spawned uWSGI worker 2 (pid: 15987, cores: 1)
+spawned uWSGI worker 3 (pid: 15988, cores: 1)
+spawned uWSGI worker 4 (pid: 15989, cores: 1)
+*** Starting uWSGI 2.0.18 (64bit) on [Tue Feb 25 22:34:51 2020] ***
+compiled with version: 7.4.0 on 10 February 2020 10:53:21
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-0-7-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/cevrs/cevrs
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/cevrs/cevrs
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 7080
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8000/).
+bind(): Address already in use [core/socket.c line 769]
+Invalid HTTP_HOST header: '134.175.189.199'. You may need to add '134.175.189.199' to ALLOWED_HOSTS.
+[pid: 15987|app: 0|req: 1/1] 223.150.201.154 () {44 vars in 786 bytes} [Tue Feb 25 14:35:25 2020] GET / => generated 57149 bytes in 42 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '134.175.189.199'. You may need to add '134.175.189.199' to ALLOWED_HOSTS.
+[pid: 15988|app: 0|req: 1/2] 223.150.201.154 () {44 vars in 727 bytes} [Tue Feb 25 14:35:25 2020] GET /favicon.ico => generated 57200 bytes in 39 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Tue Feb 25 22:39:01 2020] ***
+compiled with version: 7.4.0 on 10 February 2020 10:53:21
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-0-7-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/cevrs/cevrs
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/cevrs/cevrs
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 7080
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8000/).
+bind(): Address already in use [core/socket.c line 769]
+Invalid HTTP_HOST header: '134.175.189.199'. You may need to add '134.175.189.199' to ALLOWED_HOSTS.
+[pid: 15987|app: 0|req: 2/3] 223.150.201.154 () {46 vars in 817 bytes} [Tue Feb 25 14:39:13 2020] GET / => generated 57284 bytes in 48 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '134.175.189.199'. You may need to add '134.175.189.199' to ALLOWED_HOSTS.
+[pid: 15988|app: 0|req: 2/4] 223.150.201.154 () {48 vars in 780 bytes} [Tue Feb 25 14:39:14 2020] GET /favicon.ico => generated 57461 bytes in 47 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '134.175.189.199'. You may need to add '134.175.189.199' to ALLOWED_HOSTS.
+[pid: 15987|app: 0|req: 3/5] 223.150.201.154 () {46 vars in 817 bytes} [Tue Feb 25 14:39:16 2020] GET / => generated 57284 bytes in 31 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '134.175.189.199'. You may need to add '134.175.189.199' to ALLOWED_HOSTS.
+[pid: 15988|app: 0|req: 3/6] 223.150.201.154 () {48 vars in 780 bytes} [Tue Feb 25 14:39:16 2020] GET /favicon.ico => generated 57461 bytes in 29 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '134.175.189.199'. You may need to add '134.175.189.199' to ALLOWED_HOSTS.
+[pid: 15987|app: 0|req: 4/7] 223.150.201.154 () {46 vars in 817 bytes} [Tue Feb 25 14:39:17 2020] GET / => generated 57284 bytes in 33 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '134.175.189.199'. You may need to add '134.175.189.199' to ALLOWED_HOSTS.
+[pid: 15988|app: 0|req: 4/8] 223.150.201.154 () {48 vars in 780 bytes} [Tue Feb 25 14:39:17 2020] GET /favicon.ico => generated 57461 bytes in 32 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '134.175.189.199'. You may need to add '134.175.189.199' to ALLOWED_HOSTS.
+[pid: 15987|app: 0|req: 5/9] 223.150.201.154 () {44 vars in 786 bytes} [Tue Feb 25 14:41:52 2020] GET / => generated 57149 bytes in 31 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '134.175.189.199'. You may need to add '134.175.189.199' to ALLOWED_HOSTS.
+[pid: 15988|app: 0|req: 5/10] 223.150.201.154 () {44 vars in 727 bytes} [Tue Feb 25 14:41:52 2020] GET /favicon.ico => generated 57200 bytes in 31 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '134.175.189.199'. You may need to add '134.175.189.199' to ALLOWED_HOSTS.
+[pid: 15987|app: 0|req: 6/11] 213.136.85.27 () {42 vars in 586 bytes} [Tue Feb 25 14:43:13 2020] GET /w00tw00t.at.blackhats.romanian.anti-sec:) => generated 57241 bytes in 31 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '134.175.189.199'. You may need to add '134.175.189.199' to ALLOWED_HOSTS.
+[pid: 15988|app: 0|req: 6/12] 213.136.85.27 () {42 vars in 560 bytes} [Tue Feb 25 14:43:14 2020] GET /phpMyAdmin/scripts/setup.php => generated 57085 bytes in 34 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '134.175.189.199'. You may need to add '134.175.189.199' to ALLOWED_HOSTS.
+[pid: 15987|app: 0|req: 7/13] 213.136.85.27 () {42 vars in 560 bytes} [Tue Feb 25 14:43:15 2020] GET /phpmyadmin/scripts/setup.php => generated 57085 bytes in 36 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '134.175.189.199'. You may need to add '134.175.189.199' to ALLOWED_HOSTS.
+[pid: 15988|app: 0|req: 7/14] 213.136.85.27 () {42 vars in 546 bytes} [Tue Feb 25 14:43:17 2020] GET /pma/scripts/setup.php => generated 57001 bytes in 32 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '134.175.189.199'. You may need to add '134.175.189.199' to ALLOWED_HOSTS.
+[pid: 15981|app: 0|req: 1/15] 213.136.85.27 () {42 vars in 554 bytes} [Tue Feb 25 14:43:24 2020] GET /MyAdmin/scripts/setup.php => generated 57049 bytes in 42 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Tue Feb 25 22:49:30 2020] ***
+compiled with version: 7.4.0 on 10 February 2020 10:53:21
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-0-7-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/cevrs/cevrs
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/cevrs/cevrs
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 7080
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8000).
+bind(): Address already in use [core/socket.c line 769]
+Invalid HTTP_HOST header: '134.175.189.199'. You may need to add '134.175.189.199' to ALLOWED_HOSTS.
+[pid: 15987|app: 0|req: 8/16] 223.150.201.154 () {46 vars in 817 bytes} [Tue Feb 25 14:49:50 2020] GET / => generated 57284 bytes in 32 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '134.175.189.199'. You may need to add '134.175.189.199' to ALLOWED_HOSTS.
+[pid: 15988|app: 0|req: 8/17] 223.150.201.154 () {48 vars in 780 bytes} [Tue Feb 25 14:49:50 2020] GET /favicon.ico => generated 57461 bytes in 33 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '134.175.189.199'. You may need to add '134.175.189.199' to ALLOWED_HOSTS.
+[pid: 15987|app: 0|req: 9/18] 223.150.201.154 () {46 vars in 817 bytes} [Tue Feb 25 14:49:55 2020] GET / => generated 57284 bytes in 36 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '134.175.189.199'. You may need to add '134.175.189.199' to ALLOWED_HOSTS.
+[pid: 15988|app: 0|req: 9/19] 223.150.201.154 () {44 vars in 727 bytes} [Tue Feb 25 14:49:55 2020] GET /favicon.ico => generated 57200 bytes in 31 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Tue Feb 25 22:51:25 2020] ***
+compiled with version: 7.4.0 on 10 February 2020 10:53:21
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-0-7-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/cevrs/cevrs
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/cevrs/cevrs
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 7080
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8000).
+bind(): Address already in use [core/socket.c line 769]
+Invalid HTTP_HOST header: '134.175.189.199:8001'. You may need to add '134.175.189.199' to ALLOWED_HOSTS.
+[pid: 15987|app: 0|req: 10/20] 223.150.201.154 () {44 vars in 795 bytes} [Tue Feb 25 14:51:45 2020] GET / => generated 57202 bytes in 33 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '134.175.189.199:8001'. You may need to add '134.175.189.199' to ALLOWED_HOSTS.
+[pid: 15988|app: 0|req: 10/21] 223.150.201.154 () {44 vars in 741 bytes} [Tue Feb 25 14:51:45 2020] GET /favicon.ico => generated 57258 bytes in 32 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '134.175.189.199:8001'. You may need to add '134.175.189.199' to ALLOWED_HOSTS.
+[pid: 15987|app: 0|req: 11/22] 223.150.201.154 () {44 vars in 795 bytes} [Tue Feb 25 14:52:31 2020] GET / => generated 57202 bytes in 32 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '134.175.189.199:8001'. You may need to add '134.175.189.199' to ALLOWED_HOSTS.
+[pid: 15988|app: 0|req: 11/23] 223.150.201.154 () {44 vars in 741 bytes} [Tue Feb 25 14:52:32 2020] GET /favicon.ico => generated 57258 bytes in 32 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Tue Feb 25 22:59:08 2020] ***
+compiled with version: 7.4.0 on 10 February 2020 10:53:21
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-0-7-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/cevrs/cevrs
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/cevrs/cevrs
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 7080
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8000).
+bind(): Address already in use [core/socket.c line 769]
+Invalid HTTP_HOST header: '134.175.189.199:8001'. You may need to add '134.175.189.199' to ALLOWED_HOSTS.
+[pid: 15987|app: 0|req: 12/24] 223.150.201.154 () {46 vars in 821 bytes} [Tue Feb 25 14:59:19 2020] GET / => generated 57332 bytes in 31 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '134.175.189.199:8001'. You may need to add '134.175.189.199' to ALLOWED_HOSTS.
+[pid: 15988|app: 0|req: 12/25] 223.150.201.154 () {48 vars in 789 bytes} [Tue Feb 25 14:59:20 2020] GET /favicon.ico => generated 57514 bytes in 36 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'www.cevrs.cn:8001'. You may need to add 'www.cevrs.cn' to ALLOWED_HOSTS.
+[pid: 15987|app: 0|req: 13/26] 223.150.201.154 () {44 vars in 787 bytes} [Tue Feb 25 15:07:45 2020] GET / => generated 57152 bytes in 31 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'www.cevrs.cn:8001'. You may need to add 'www.cevrs.cn' to ALLOWED_HOSTS.
+[pid: 15988|app: 0|req: 13/27] 223.150.201.154 () {44 vars in 730 bytes} [Tue Feb 25 15:07:45 2020] GET /favicon.ico => generated 57205 bytes in 37 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Tue Feb 25 23:08:14 2020] ***
+compiled with version: 7.4.0 on 10 February 2020 10:53:21
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-0-7-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/cevrs/cevrs
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/cevrs/cevrs
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 7080
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8000).
+bind(): Address already in use [core/socket.c line 769]
+Invalid HTTP_HOST header: 'www.cevrs.cn:8001'. You may need to add 'www.cevrs.cn' to ALLOWED_HOSTS.
+[pid: 15987|app: 0|req: 14/28] 223.150.201.154 () {46 vars in 820 bytes} [Tue Feb 25 15:08:22 2020] GET / => generated 57289 bytes in 31 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'www.cevrs.cn:8001'. You may need to add 'www.cevrs.cn' to ALLOWED_HOSTS.
+[pid: 15988|app: 0|req: 14/29] 223.150.201.154 () {48 vars in 785 bytes} [Tue Feb 25 15:08:22 2020] GET /favicon.ico => generated 57468 bytes in 31 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Feb 26 13:15:28 2020] ***
+compiled with version: 7.4.0 on 10 February 2020 10:53:21
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-0-7-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/cevrs/cevrs
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/cevrs/cevrs
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 7080
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8000).
+bind(): Address already in use [core/socket.c line 769]
+Invalid HTTP_HOST header: 'www.cevrs.cn:8001'. You may need to add 'www.cevrs.cn' to ALLOWED_HOSTS.
+[pid: 15987|app: 0|req: 15/30] 223.150.203.101 () {44 vars in 790 bytes} [Wed Feb 26 05:15:48 2020] GET / => generated 57155 bytes in 32 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'www.cevrs.cn:8001'. You may need to add 'www.cevrs.cn' to ALLOWED_HOSTS.
+[pid: 15988|app: 0|req: 15/31] 223.150.203.101 () {44 vars in 733 bytes} [Wed Feb 26 05:15:49 2020] GET /favicon.ico => generated 57208 bytes in 32 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Feb 26 13:18:15 2020] ***
+compiled with version: 7.4.0 on 10 February 2020 10:53:21
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-0-7-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/cevrs/cevrs
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/cevrs/cevrs
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 7080
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8000).
+bind(): Address already in use [core/socket.c line 769]
+Invalid HTTP_HOST header: 'www.cevrs.cn:8001'. You may need to add 'www.cevrs.cn' to ALLOWED_HOSTS.
+[pid: 15987|app: 0|req: 16/32] 223.150.203.101 () {46 vars in 821 bytes} [Wed Feb 26 05:18:21 2020] GET / => generated 57290 bytes in 37 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'www.cevrs.cn:8001'. You may need to add 'www.cevrs.cn' to ALLOWED_HOSTS.
+[pid: 15988|app: 0|req: 16/33] 223.150.203.101 () {48 vars in 786 bytes} [Wed Feb 26 05:18:22 2020] GET /favicon.ico => generated 57469 bytes in 33 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Feb 26 13:30:52 2020] ***
+compiled with version: 7.4.0 on 10 February 2020 10:53:21
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-0-7-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/cevrs/cevrs
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/cevrs/cevrs/
+your processes number limit is 7080
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8000).
+bind(): Address already in use [core/socket.c line 769]
+Invalid HTTP_HOST header: 'www.cevrs.cn:8001'. You may need to add 'www.cevrs.cn' to ALLOWED_HOSTS.
+[pid: 15987|app: 0|req: 17/34] 223.150.203.101 () {46 vars in 821 bytes} [Wed Feb 26 05:31:07 2020] GET / => generated 57290 bytes in 31 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'www.cevrs.cn:8001'. You may need to add 'www.cevrs.cn' to ALLOWED_HOSTS.
+[pid: 15988|app: 0|req: 17/35] 223.150.203.101 () {48 vars in 786 bytes} [Wed Feb 26 05:31:07 2020] GET /favicon.ico => generated 57469 bytes in 32 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Feb 26 13:44:58 2020] ***
+compiled with version: 7.4.0 on 10 February 2020 10:53:21
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-0-7-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/cevrs/cevrs
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/cevrs/cevrs/
+your processes number limit is 7080
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8000).
+bind(): Address already in use [core/socket.c line 769]
+Invalid HTTP_HOST header: 'www.cevrs.cn:8001'. You may need to add 'www.cevrs.cn' to ALLOWED_HOSTS.
+[pid: 15987|app: 0|req: 18/36] 223.150.203.101 () {44 vars in 790 bytes} [Wed Feb 26 05:45:30 2020] GET / => generated 57155 bytes in 31 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'www.cevrs.cn:8001'. You may need to add 'www.cevrs.cn' to ALLOWED_HOSTS.
+[pid: 15988|app: 0|req: 18/37] 223.150.203.101 () {44 vars in 733 bytes} [Wed Feb 26 05:45:31 2020] GET /favicon.ico => generated 57208 bytes in 31 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Feb 26 13:50:34 2020] ***
+compiled with version: 7.4.0 on 10 February 2020 10:53:21
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-0-7-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/cevrs/cevrs
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/cevrs/cevrs/cevrs/
+*** WARNING: you are running uWSGI without its master process manager ***
+your processes number limit is 7080
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8000).
+bind(): Address already in use [core/socket.c line 769]
+Invalid HTTP_HOST header: 'www.cevrs.cn:8001'. You may need to add 'www.cevrs.cn' to ALLOWED_HOSTS.
+[pid: 15987|app: 0|req: 19/38] 223.150.203.101 () {46 vars in 816 bytes} [Wed Feb 26 05:50:55 2020] GET / => generated 57285 bytes in 30 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'www.cevrs.cn:8001'. You may need to add 'www.cevrs.cn' to ALLOWED_HOSTS.
+[pid: 15988|app: 0|req: 19/39] 223.150.203.101 () {48 vars in 781 bytes} [Wed Feb 26 05:50:55 2020] GET /favicon.ico => generated 57464 bytes in 33 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'www.cevrs.cn:8001'. You may need to add 'www.cevrs.cn' to ALLOWED_HOSTS.
+[pid: 15987|app: 0|req: 20/40] 223.150.203.101 () {46 vars in 816 bytes} [Wed Feb 26 05:51:02 2020] GET / => generated 57285 bytes in 32 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'www.cevrs.cn:8001'. You may need to add 'www.cevrs.cn' to ALLOWED_HOSTS.
+[pid: 15988|app: 0|req: 20/41] 223.150.203.101 () {44 vars in 728 bytes} [Wed Feb 26 05:51:03 2020] GET /favicon.ico => generated 57203 bytes in 34 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Feb 26 13:57:18 2020] ***
+compiled with version: 7.4.0 on 10 February 2020 10:53:21
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-0-7-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/cevrs/cevrs
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/cevrs/cevrs/
+your processes number limit is 7080
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8000).
+bind(): Address already in use [core/socket.c line 769]
+Invalid HTTP_HOST header: 'www.cevrs.cn:8001'. You may need to add 'www.cevrs.cn' to ALLOWED_HOSTS.
+[pid: 15987|app: 0|req: 21/42] 223.150.203.101 () {46 vars in 816 bytes} [Wed Feb 26 05:57:50 2020] GET / => generated 57285 bytes in 32 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'www.cevrs.cn:8001'. You may need to add 'www.cevrs.cn' to ALLOWED_HOSTS.
+[pid: 15988|app: 0|req: 21/43] 223.150.203.101 () {48 vars in 781 bytes} [Wed Feb 26 05:57:50 2020] GET /favicon.ico => generated 57464 bytes in 33 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'www.cevrs.cn:8001'. You may need to add 'www.cevrs.cn' to ALLOWED_HOSTS.
+[pid: 15987|app: 0|req: 22/44] 223.150.203.101 () {46 vars in 809 bytes} [Wed Feb 26 05:59:06 2020] GET / => generated 57278 bytes in 32 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'www.cevrs.cn:8001'. You may need to add 'www.cevrs.cn' to ALLOWED_HOSTS.
+[pid: 15988|app: 0|req: 22/45] 223.150.203.101 () {44 vars in 785 bytes} [Wed Feb 26 05:59:07 2020] GET / => generated 57150 bytes in 33 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'www.cevrs.cn:8001'. You may need to add 'www.cevrs.cn' to ALLOWED_HOSTS.
+[pid: 15987|app: 0|req: 23/46] 223.150.203.101 () {44 vars in 728 bytes} [Wed Feb 26 05:59:07 2020] GET /favicon.ico => generated 57203 bytes in 36 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Feb 26 13:59:50 2020] ***
+compiled with version: 7.4.0 on 10 February 2020 10:53:21
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-0-7-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/cevrs/cevrs
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/cevrs/cevrs/
+your processes number limit is 7080
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8000).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Feb 26 14:00:58 2020] ***
+compiled with version: 7.4.0 on 10 February 2020 10:53:21
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-0-7-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/cevrs/cevrs
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/cevrs/cevrs/
+your processes number limit is 7080
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8000).
+bind(): Address already in use [core/socket.c line 769]
+Invalid HTTP_HOST header: '134.175.189.199'. You may need to add '134.175.189.199' to ALLOWED_HOSTS.
+[pid: 15987|app: 0|req: 24/47] 223.150.203.101 () {44 vars in 784 bytes} [Wed Feb 26 06:01:18 2020] GET / => generated 57147 bytes in 34 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '134.175.189.199'. You may need to add '134.175.189.199' to ALLOWED_HOSTS.
+[pid: 15988|app: 0|req: 23/48] 223.150.203.101 () {44 vars in 725 bytes} [Wed Feb 26 06:01:19 2020] GET /favicon.ico => generated 57198 bytes in 38 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: 'www.cevrs.cn'. You may need to add 'www.cevrs.cn' to ALLOWED_HOSTS.
+[pid: 15987|app: 0|req: 25/49] 223.150.203.101 () {46 vars in 805 bytes} [Wed Feb 26 06:02:21 2020] GET / => generated 57228 bytes in 33 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '134.175.189.199'. You may need to add '134.175.189.199' to ALLOWED_HOSTS.
+[pid: 15987|app: 0|req: 26/50] 223.150.203.101 () {44 vars in 784 bytes} [Wed Feb 26 06:14:15 2020] GET / => generated 57147 bytes in 31 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '134.175.189.199'. You may need to add '134.175.189.199' to ALLOWED_HOSTS.
+[pid: 15988|app: 0|req: 24/51] 223.150.203.101 () {44 vars in 725 bytes} [Wed Feb 26 06:14:15 2020] GET /favicon.ico => generated 57198 bytes in 33 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Feb 26 15:45:55 2020] ***
+compiled with version: 7.4.0 on 10 February 2020 10:53:21
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-0-7-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/cevrs/cevrs
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/cevrs/cevrs/
+your processes number limit is 7080
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (:8001).
+bind(): Address already in use [core/socket.c line 769]
+Invalid HTTP_HOST header: '134.175.189.199'. You may need to add '134.175.189.199' to ALLOWED_HOSTS.
+[pid: 15987|app: 0|req: 27/52] 223.150.203.101 () {44 vars in 784 bytes} [Wed Feb 26 07:46:39 2020] GET / => generated 57147 bytes in 31 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '134.175.189.199'. You may need to add '134.175.189.199' to ALLOWED_HOSTS.
+[pid: 15988|app: 0|req: 25/53] 223.150.203.101 () {44 vars in 725 bytes} [Wed Feb 26 07:46:39 2020] GET /favicon.ico => generated 57198 bytes in 32 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '134.175.189.199'. You may need to add '134.175.189.199' to ALLOWED_HOSTS.
+[pid: 15987|app: 0|req: 28/54] 223.150.203.101 () {44 vars in 784 bytes} [Wed Feb 26 07:49:44 2020] GET / => generated 57147 bytes in 32 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '134.175.189.199'. You may need to add '134.175.189.199' to ALLOWED_HOSTS.
+[pid: 15988|app: 0|req: 26/55] 223.150.203.101 () {44 vars in 725 bytes} [Wed Feb 26 07:49:44 2020] GET /favicon.ico => generated 57198 bytes in 31 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '134.175.189.199'. You may need to add '134.175.189.199' to ALLOWED_HOSTS.
+[pid: 15987|app: 0|req: 29/56] 223.150.203.101 () {46 vars in 815 bytes} [Wed Feb 26 07:54:33 2020] GET / => generated 57282 bytes in 33 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+Invalid HTTP_HOST header: '134.175.189.199'. You may need to add '134.175.189.199' to ALLOWED_HOSTS.
+[pid: 15988|app: 0|req: 27/57] 223.150.203.101 () {48 vars in 778 bytes} [Wed Feb 26 07:54:33 2020] GET /favicon.ico => generated 57459 bytes in 39 msecs (HTTP/1.1 400) 2 headers in 67 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Feb 26 16:05:07 2020] ***
+compiled with version: 7.4.0 on 10 February 2020 10:53:21
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-0-7-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/cevrs/cevrs
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/cevrs/cevrs/
+your processes number limit is 7080
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :8001 fd 3
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 6
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Nov  7 2019, 10:44:02)  [GCC 8.3.0]
+Python main interpreter initialized at 0x55be4b3eb320
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55be4b3eb320 pid: 25533 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 25533)
+spawned uWSGI worker 1 (pid: 25536, cores: 2)
+spawned uWSGI worker 2 (pid: 25537, cores: 2)
+spawned uWSGI worker 3 (pid: 25538, cores: 2)
+spawned uWSGI worker 4 (pid: 25539, cores: 2)
+spawned uWSGI http 1 (pid: 25540)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view recommendation.views.index didn't return an HttpResponse object. It returned None instead.
+Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view recommendation.views.index didn't return an HttpResponse object. It returned None instead.
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view recommendation.views.index didn't return an HttpResponse object. It returned None instead.
+Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view recommendation.views.index didn't return an HttpResponse object. It returned None instead.
+Invalid HTTP_HOST header: 'www.cevrs.cn'. You may need to add 'www.cevrs.cn' to ALLOWED_HOSTS.
+Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view recommendation.views.index didn't return an HttpResponse object. It returned None instead.
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view recommendation.views.index didn't return an HttpResponse object. It returned None instead.
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 25540)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Feb 26 17:27:15 2020] ***
+compiled with version: 7.4.0 on 10 February 2020 10:53:21
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-0-7-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/cevrs/cevrs
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/cevrs/cevrs/
+your processes number limit is 7080
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :8001 fd 3
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 6
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Nov  7 2019, 10:44:02)  [GCC 8.3.0]
+Python main interpreter initialized at 0x55d93b03f330
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55d93b03f330 pid: 3807 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 3807)
+spawned uWSGI worker 1 (pid: 3809, cores: 2)
+spawned uWSGI worker 2 (pid: 3810, cores: 2)
+spawned uWSGI worker 3 (pid: 3811, cores: 2)
+spawned uWSGI worker 4 (pid: 3812, cores: 2)
+spawned uWSGI http 1 (pid: 3813)
+Not Found: /static/css/app.5bb50640a35001cde55cea252e48ecbf.css
+Not Found: /static/js/app.75ff3a2e028f343201b9.js
+Not Found: /static/css/app.5bb50640a35001cde55cea252e48ecbf.css
+Not Found: /static/js/manifest.2ae2e69a05c33dfc65f8.js
+Not Found: /static/js/vendor.ffce71cc1a79590b09ba.js
+Not Found: /static/js/app.75ff3a2e028f343201b9.js
+Not Found: /favicon.ico
+Not Found: /static/css/app.5bb50640a35001cde55cea252e48ecbf.css
+Not Found: /static/js/manifest.2ae2e69a05c33dfc65f8.js
+Not Found: /static/js/vendor.ffce71cc1a79590b09ba.js
+Not Found: /static/js/app.75ff3a2e028f343201b9.js
+Not Found: /static/css/app.5bb50640a35001cde55cea252e48ecbf.css
+Not Found: /static/js/manifest.2ae2e69a05c33dfc65f8.js
+Not Found: /static/js/vendor.ffce71cc1a79590b09ba.js
+Not Found: /static/js/app.75ff3a2e028f343201b9.js
+Invalid HTTP_HOST header: '134.175.189.19'. You may need to add '134.175.189.19' to ALLOWED_HOSTS.
+Not Found: /index.php
+Not Found: /phpmyadmin/index.php
+Not Found: /static/css/app.5bb50640a35001cde55cea252e48ecbf.css
+Not Found: /static/js/vendor.ffce71cc1a79590b09ba.js
+Not Found: /static/js/manifest.2ae2e69a05c33dfc65f8.js
+Not Found: /static/js/app.75ff3a2e028f343201b9.js
+Not Found: /static/css/app.5bb50640a35001cde55cea252e48ecbf.css
+Not Found: /static/js/manifest.2ae2e69a05c33dfc65f8.js
+Not Found: /static/js/vendor.ffce71cc1a79590b09ba.js
+Not Found: /static/js/app.75ff3a2e028f343201b9.js
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 3813)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Feb 26 21:32:00 2020] ***
+compiled with version: 7.4.0 on 10 February 2020 10:53:21
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-0-7-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/cevrs/cevrs
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/cevrs/cevrs/
+your processes number limit is 7080
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :8001 fd 3
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 6
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Nov  7 2019, 10:44:02)  [GCC 8.3.0]
+Python main interpreter initialized at 0x55fba2957330
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55fba2957330 pid: 2974 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 2974)
+spawned uWSGI worker 1 (pid: 2977, cores: 2)
+spawned uWSGI worker 2 (pid: 2978, cores: 2)
+spawned uWSGI worker 3 (pid: 2979, cores: 2)
+spawned uWSGI worker 4 (pid: 2980, cores: 2)
+spawned uWSGI http 1 (pid: 2981)
+Not Found: /static/css/app.5bb50640a35001cde55cea252e48ecbf.css
+Not Found: /static/js/app.75ff3a2e028f343201b9.js
+Not Found: /static/css/app.5bb50640a35001cde55cea252e48ecbf.css
+Not Found: /static/js/vendor.ffce71cc1a79590b09ba.js
+Not Found: /static/js/manifest.2ae2e69a05c33dfc65f8.js
+Not Found: /static/js/app.75ff3a2e028f343201b9.js
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 2981)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Feb 26 21:34:52 2020] ***
+compiled with version: 7.4.0 on 10 February 2020 10:53:21
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-0-7-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/cevrs/cevrs
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/cevrs/cevrs/
+your processes number limit is 7080
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :8001 fd 3
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 6
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Nov  7 2019, 10:44:02)  [GCC 8.3.0]
+Python main interpreter initialized at 0x5654080ab330
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5654080ab330 pid: 3376 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 3376)
+spawned uWSGI worker 1 (pid: 3378, cores: 2)
+spawned uWSGI worker 2 (pid: 3379, cores: 2)
+spawned uWSGI worker 3 (pid: 3380, cores: 2)
+spawned uWSGI worker 4 (pid: 3381, cores: 2)
+spawned uWSGI http 1 (pid: 3382)
+Not Found: /static/css/app.5bb50640a35001cde55cea252e48ecbf.css
+Not Found: /static/js/vendor.ffce71cc1a79590b09ba.js
+Not Found: /static/js/app.75ff3a2e028f343201b9.js
+Not Found: /static/js/manifest.2ae2e69a05c33dfc65f8.js
+Not Found: /static/js/manifest.2ae2e69a05c33dfc65f8.js
+Not Found: /static/css/app.5bb50640a35001cde55cea252e48ecbf.css
+Not Found: /static/js/vendor.ffce71cc1a79590b09ba.js
+Not Found: /static/js/app.75ff3a2e028f343201b9.js
+Not Found: /static/css/app.5bb50640a35001cde55cea252e48ecbf.css
+Not Found: /static/js/manifest.2ae2e69a05c33dfc65f8.js
+Not Found: /static/js/vendor.ffce71cc1a79590b09ba.js
+Not Found: /static/css/app.5bb50640a35001cde55cea252e48ecbf.css
+Not Found: /static/js/manifest.2ae2e69a05c33dfc65f8.js
+Not Found: /static/js/vendor.ffce71cc1a79590b09ba.js
+Not Found: /static/js/app.75ff3a2e028f343201b9.js
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 3382)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Feb 26 21:44:16 2020] ***
+compiled with version: 7.4.0 on 10 February 2020 10:53:21
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-0-7-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/cevrs/cevrs
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/cevrs/cevrs/
+your processes number limit is 7080
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :8001 fd 3
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 6
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Nov  7 2019, 10:44:02)  [GCC 8.3.0]
+Python main interpreter initialized at 0x55accc535330
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+Traceback (most recent call last):
+  File "./cevrs/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/usr/local/lib/python3.6/dist-packages/django/__init__.py", line 22, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/usr/local/lib/python3.6/dist-packages/django/conf/__init__.py", line 56, in __getattr__
+    self._setup(name)
+  File "/usr/local/lib/python3.6/dist-packages/django/conf/__init__.py", line 41, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/usr/local/lib/python3.6/dist-packages/django/conf/__init__.py", line 110, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "./cevrs/settings.py", line 78
+    os.path.join(BASE_DIR, 'static'),
+     ^
+SyntaxError: invalid syntax
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4611)
+spawned uWSGI worker 1 (pid: 4613, cores: 2)
+spawned uWSGI worker 2 (pid: 4614, cores: 2)
+spawned uWSGI worker 3 (pid: 4615, cores: 2)
+spawned uWSGI worker 4 (pid: 4616, cores: 2)
+spawned uWSGI http 1 (pid: 4617)
+--- no python application found, check your startup logs for errors ---
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 4617)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Feb 26 21:45:18 2020] ***
+compiled with version: 7.4.0 on 10 February 2020 10:53:21
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-0-7-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/cevrs/cevrs
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/cevrs/cevrs/
+your processes number limit is 7080
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :8001 fd 3
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 6
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Nov  7 2019, 10:44:02)  [GCC 8.3.0]
+Python main interpreter initialized at 0x5630509b3330
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+Traceback (most recent call last):
+  File "./cevrs/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/usr/local/lib/python3.6/dist-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/usr/local/lib/python3.6/dist-packages/django/__init__.py", line 22, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+  File "/usr/local/lib/python3.6/dist-packages/django/conf/__init__.py", line 56, in __getattr__
+    self._setup(name)
+  File "/usr/local/lib/python3.6/dist-packages/django/conf/__init__.py", line 41, in _setup
+    self._wrapped = Settings(settings_module)
+  File "/usr/local/lib/python3.6/dist-packages/django/conf/__init__.py", line 110, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "./cevrs/settings.py", line 78
+    os.path.join(BASE_DIR, 'static'),
+     ^
+SyntaxError: invalid syntax
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4761)
+spawned uWSGI worker 1 (pid: 4763, cores: 2)
+spawned uWSGI worker 2 (pid: 4764, cores: 2)
+spawned uWSGI worker 3 (pid: 4765, cores: 2)
+spawned uWSGI worker 4 (pid: 4766, cores: 2)
+spawned uWSGI http 1 (pid: 4767)
+--- no python application found, check your startup logs for errors ---
+--- no python application found, check your startup logs for errors ---
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 4767)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Feb 26 21:47:46 2020] ***
+compiled with version: 7.4.0 on 10 February 2020 10:53:21
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-0-7-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/cevrs/cevrs
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/cevrs/cevrs/
+your processes number limit is 7080
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :8001 fd 3
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 6
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Nov  7 2019, 10:44:02)  [GCC 8.3.0]
+Python main interpreter initialized at 0x556d3fe7b330
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x556d3fe7b330 pid: 5088 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 5088)
+spawned uWSGI worker 1 (pid: 5090, cores: 2)
+spawned uWSGI worker 2 (pid: 5091, cores: 2)
+spawned uWSGI worker 3 (pid: 5092, cores: 2)
+spawned uWSGI worker 4 (pid: 5093, cores: 2)
+spawned uWSGI http 1 (pid: 5094)
+Not Found: /static/css/app.5bb50640a35001cde55cea252e48ecbf.css
+Not Found: /static/js/vendor.ffce71cc1a79590b09ba.js
+Not Found: /static/css/app.5bb50640a35001cde55cea252e48ecbf.css
+Not Found: /static/js/manifest.2ae2e69a05c33dfc65f8.js
+Not Found: /static/js/app.75ff3a2e028f343201b9.js
+Not Found: /static/js/vendor.ffce71cc1a79590b09ba.js
+Not Found: /static/js/app.75ff3a2e028f343201b9.js
+Invalid HTTP_HOST header: '51.77.91.132:1923'. You may need to add '51.77.91.132' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: '51.77.91.132:1923'. You may need to add '51.77.91.132' to ALLOWED_HOSTS.
+Invalid HTTP_HOST header: '51.77.91.132:1923'. You may need to add '51.77.91.132' to ALLOWED_HOSTS.
+Not Found: /solr/
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 5094)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Thu Feb 27 11:13:33 2020] ***
+compiled with version: 7.4.0 on 10 February 2020 10:53:21
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-0-7-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/cevrs/cevrs
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/cevrs/cevrs/
+your processes number limit is 7080
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :8001 fd 3
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 6
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Nov  7 2019, 10:44:02)  [GCC 8.3.0]
+Python main interpreter initialized at 0x55c806e932f0
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55c806e932f0 pid: 12379 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 12379)
+spawned uWSGI worker 1 (pid: 12381, cores: 2)
+spawned uWSGI worker 2 (pid: 12382, cores: 2)
+spawned uWSGI worker 3 (pid: 12383, cores: 2)
+spawned uWSGI worker 4 (pid: 12384, cores: 2)
+spawned uWSGI http 1 (pid: 12385)
+Not Found: /static/css/app.5bb50640a35001cde55cea252e48ecbf.css
+Not Found: /static/css/app.5bb50640a35001cde55cea252e48ecbf.css
+Not Found: /static/js/vendor.ffce71cc1a79590b09ba.js
+Not Found: /static/js/app.75ff3a2e028f343201b9.js
+Not Found: /static/js/manifest.2ae2e69a05c33dfc65f8.js
+Not Found: /static/js/vendor.ffce71cc1a79590b09ba.js
+Not Found: /static/js/app.75ff3a2e028f343201b9.js
+Not Found: /favicon.ico
+Not Found: /static/css/app.5bb50640a35001cde55cea252e48ecbf.css
+Not Found: /static/js/manifest.2ae2e69a05c33dfc65f8.js
+Not Found: /static/js/vendor.ffce71cc1a79590b09ba.js
+Not Found: /static/js/app.75ff3a2e028f343201b9.js
+Not Found: /static/css/app.5bb50640a35001cde55cea252e48ecbf.css
+Not Found: /static/js/manifest.2ae2e69a05c33dfc65f8.js
+Not Found: /static/js/vendor.ffce71cc1a79590b09ba.js
+Not Found: /static/js/app.75ff3a2e028f343201b9.js
+Not Found: /favicon.ico
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 12385)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Thu Feb 27 11:17:41 2020] ***
+compiled with version: 7.4.0 on 10 February 2020 10:53:21
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-0-7-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/cevrs/cevrs
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/cevrs/cevrs/
+your processes number limit is 7080
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :8001 fd 3
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 6
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Nov  7 2019, 10:44:02)  [GCC 8.3.0]
+Python main interpreter initialized at 0x563afd9bf330
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x563afd9bf330 pid: 12946 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 12946)
+spawned uWSGI worker 1 (pid: 12953, cores: 2)
+spawned uWSGI worker 2 (pid: 12954, cores: 2)
+spawned uWSGI worker 3 (pid: 12955, cores: 2)
+spawned uWSGI worker 4 (pid: 12956, cores: 2)
+spawned uWSGI http 1 (pid: 12957)
+Not Found: /static/css/app.css
+Not Found: /static/js/app.js
+Not Found: /static/js/manifest.js
+Not Found: /static/js/vendor.js
+Not Found: /static/css/app.css
+Not Found: /static/js/vendor.js
+Not Found: /static/js/app.js
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 12957)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Thu Feb 27 11:22:13 2020] ***
+compiled with version: 7.4.0 on 10 February 2020 10:53:21
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-0-7-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/cevrs/cevrs
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/cevrs/cevrs/
+your processes number limit is 7080
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :8001 fd 3
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 6
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Nov  7 2019, 10:44:02)  [GCC 8.3.0]
+Python main interpreter initialized at 0x55e7ab314330
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55e7ab314330 pid: 13565 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 13565)
+spawned uWSGI worker 1 (pid: 13567, cores: 2)
+spawned uWSGI worker 2 (pid: 13568, cores: 2)
+spawned uWSGI worker 3 (pid: 13569, cores: 2)
+spawned uWSGI worker 4 (pid: 13570, cores: 2)
+spawned uWSGI http 1 (pid: 13571)
+Not Found: /static/css/app.css
+Not Found: /static/css/app.css
+Not Found: /static/js/app.js
+Not Found: /static/js/vendor.js
+Not Found: /static/js/manifest.js
+Not Found: /favicon.ico
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 13571)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Thu Feb 27 11:31:39 2020] ***
+compiled with version: 7.4.0 on 10 February 2020 10:53:21
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-0-7-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/cevrs/cevrs
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/cevrs/cevrs/
+your processes number limit is 7080
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :8001 fd 3
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 6
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Nov  7 2019, 10:44:02)  [GCC 8.3.0]
+Python main interpreter initialized at 0x55b7b5869330
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55b7b5869330 pid: 14801 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 14801)
+spawned uWSGI worker 1 (pid: 14803, cores: 2)
+spawned uWSGI worker 2 (pid: 14804, cores: 2)
+spawned uWSGI worker 3 (pid: 14805, cores: 2)
+spawned uWSGI worker 4 (pid: 14806, cores: 2)
+spawned uWSGI http 1 (pid: 14807)
+Invalid HTTP_HOST header: '134.175.189.199:8001'. You may need to add '134.175.189.199' to ALLOWED_HOSTS.
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 14807)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Thu Feb 27 11:32:56 2020] ***
+compiled with version: 7.4.0 on 10 February 2020 10:53:21
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-0-7-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/cevrs/cevrs
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/cevrs/cevrs/
+your processes number limit is 7080
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :8001 fd 3
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 6
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Nov  7 2019, 10:44:02)  [GCC 8.3.0]
+Python main interpreter initialized at 0x55eb34601330
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55eb34601330 pid: 14981 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 14981)
+spawned uWSGI worker 1 (pid: 14983, cores: 2)
+spawned uWSGI worker 2 (pid: 14984, cores: 2)
+spawned uWSGI worker 3 (pid: 14985, cores: 2)
+spawned uWSGI worker 4 (pid: 14986, cores: 2)
+spawned uWSGI http 1 (pid: 14987)
+Not Found: /static/css/app.css
+Not Found: /static/js/vendor.js
+Not Found: /static/js/app.js
+Not Found: /static/css/app.css
+Not Found: /static/js/manifest.js
+Not Found: /static/js/vendor.js
+Not Found: /static/js/app.js
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 14987)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Thu Feb 27 11:47:19 2020] ***
+compiled with version: 7.4.0 on 10 February 2020 10:53:21
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-0-7-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/cevrs/cevrs
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/cevrs/cevrs/
+your processes number limit is 7080
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :8001 fd 3
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 6
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Nov  7 2019, 10:44:02)  [GCC 8.3.0]
+Python main interpreter initialized at 0x55f1d3d8c330
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55f1d3d8c330 pid: 16861 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 16861)
+spawned uWSGI worker 1 (pid: 16868, cores: 2)
+spawned uWSGI worker 2 (pid: 16869, cores: 2)
+spawned uWSGI worker 3 (pid: 16870, cores: 2)
+spawned uWSGI worker 4 (pid: 16871, cores: 2)
+spawned uWSGI http 1 (pid: 16872)
+Not Found: /static/css/app.css
+Not Found: /static/js/app.js
+Not Found: /static/css/app.css
+Not Found: /static/js/manifest.js
+Not Found: /static/js/vendor.js
+Not Found: /static/js/app.js
+Not Found: /static/js/manifest.js
+Not Found: /static/js/vendor.js
+Not Found: /static/css/app.css
+Not Found: /static/js/app.js
+Not Found: /static/css/app.css
+Not Found: /static/js/manifest.js
+Not Found: /static/js/vendor.js
+Not Found: /static/js/app.js
+Not Found: /favicon.ico
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 16872)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Thu Feb 27 11:50:42 2020] ***
+compiled with version: 7.4.0 on 10 February 2020 10:53:21
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-0-7-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/cevrs/cevrs
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/cevrs/cevrs/
+your processes number limit is 7080
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :8001 fd 3
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 6
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Nov  7 2019, 10:44:02)  [GCC 8.3.0]
+Python main interpreter initialized at 0x558a664eb330
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x558a664eb330 pid: 17327 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 17327)
+spawned uWSGI worker 1 (pid: 17329, cores: 2)
+spawned uWSGI worker 2 (pid: 17330, cores: 2)
+spawned uWSGI worker 3 (pid: 17331, cores: 2)
+spawned uWSGI worker 4 (pid: 17332, cores: 2)
+spawned uWSGI http 1 (pid: 17333)
+Not Found: /static/css/app.css
+Not Found: /static/js/manifest.js
+Not Found: /static/js/app.js
+Not Found: /static/css/app.css
+Not Found: /static/js/manifest.js
+Not Found: /static/js/vendor.js
+Not Found: /static/js/app.js
+Not Found: /static/js/manifest.js
+Not Found: /static/js/vendor.js
+Not Found: /static/css/app.css
+Not Found: /static/js/app.js
+Not Found: /static/css/app.css
+Not Found: /static/js/manifest.js
+Not Found: /static/js/vendor.js
+Not Found: /static/js/app.js
+Not Found: /favicon.ico
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 17333)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Thu Feb 27 11:55:09 2020] ***
+compiled with version: 7.4.0 on 10 February 2020 10:53:21
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-0-7-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/cevrs/cevrs
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/cevrs/cevrs/
+your processes number limit is 7080
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :8001 fd 3
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 6
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Nov  7 2019, 10:44:02)  [GCC 8.3.0]
+Python main interpreter initialized at 0x565229422330
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x565229422330 pid: 17933 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 17933)
+spawned uWSGI worker 1 (pid: 17938, cores: 2)
+spawned uWSGI worker 2 (pid: 17939, cores: 2)
+spawned uWSGI worker 3 (pid: 17940, cores: 2)
+spawned uWSGI worker 4 (pid: 17941, cores: 2)
+spawned uWSGI http 1 (pid: 17942)
+Not Found: /static/css/app.css
+Not Found: /static/css/app.css
+Not Found: /static/js/app.js
+Not Found: /static/js/vendor.js
+Not Found: /static/js/manifest.js
+Not Found: /static/js/vendor.js
+Not Found: /static/js/app.js
+Not Found: /TP/public/index.php
+Not Found: /TP/index.php
+Not Found: /thinkphp/html/public/index.php
+Not Found: /html/public/index.php
+Not Found: /public/index.php
+Not Found: /TP/html/public/index.php
+Not Found: /elrekt.php
+Not Found: /index.php
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 17942)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Thu Feb 27 12:07:38 2020] ***
+compiled with version: 7.4.0 on 10 February 2020 10:53:21
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-0-7-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/cevrs/cevrs
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/cevrs/cevrs/
+your processes number limit is 7080
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :8001 fd 3
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 6
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Nov  7 2019, 10:44:02)  [GCC 8.3.0]
+Python main interpreter initialized at 0x560731cab330
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x560731cab330 pid: 19550 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 19550)
+spawned uWSGI worker 1 (pid: 19552, cores: 2)
+spawned uWSGI worker 2 (pid: 19553, cores: 2)
+spawned uWSGI worker 3 (pid: 19554, cores: 2)
+spawned uWSGI worker 4 (pid: 19555, cores: 2)
+spawned uWSGI http 1 (pid: 19556)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.6/dist-packages/django/urls/resolvers.py", line 362, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.6/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.6/dist-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.6/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.6/dist-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "./cevrs/urls.py", line 19, in <module>
+    from django.urls import re_path
+ImportError: cannot import name 're_path'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.6/dist-packages/django/urls/resolvers.py", line 362, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.6/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.6/dist-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.6/dist-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.6/dist-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "./cevrs/urls.py", line 19, in <module>
+    from django.urls import re_path
+ImportError: cannot import name 're_path'
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 19556)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Thu Feb 27 12:20:37 2020] ***
+compiled with version: 7.4.0 on 10 February 2020 10:53:21
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-0-7-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/cevrs/cevrs
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/cevrs/cevrs/
+your processes number limit is 7080
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :8001 fd 3
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 6
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Nov  7 2019, 10:44:02)  [GCC 8.3.0]
+Python main interpreter initialized at 0x56527ee9f330
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x56527ee9f330 pid: 21259 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 21259)
+spawned uWSGI worker 1 (pid: 21261, cores: 2)
+spawned uWSGI worker 2 (pid: 21262, cores: 2)
+spawned uWSGI worker 3 (pid: 21263, cores: 2)
+spawned uWSGI worker 4 (pid: 21264, cores: 2)
+spawned uWSGI http 1 (pid: 21265)
+Not Found: /static/css/app.css
+Not Found: /static/js/manifest.js
+Not Found: /static/js/app.js
+Not Found: /static/css/app.css
+Not Found: /static/js/manifest.js
+Not Found: /static/js/vendor.js
+Not Found: /static/js/app.js
+Not Found: /static/css/app.css
+Not Found: /static/js/app.js
+Not Found: /static/js/vendor.js
+Not Found: /static/js/manifest.js
+Not Found: /static/js/manifest.js
+Not Found: /static/css/app.css
+Not Found: /static/js/vendor.js
+Not Found: /static/js/app.js
+Not Found: /favicon.ico
+Not Found: /static/js/manifest.js
+Not Found: /static/js/vendor.js
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 21265)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Thu Feb 27 12:30:34 2020] ***
+compiled with version: 7.4.0 on 10 February 2020 10:53:21
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-0-7-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/cevrs/cevrs
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/cevrs/cevrs/
+your processes number limit is 7080
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :8001 fd 3
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 6
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Nov  7 2019, 10:44:02)  [GCC 8.3.0]
+Python main interpreter initialized at 0x55bab617d330
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55bab617d330 pid: 22612 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 22612)
+spawned uWSGI worker 1 (pid: 22614, cores: 2)
+spawned uWSGI worker 2 (pid: 22615, cores: 2)
+spawned uWSGI worker 3 (pid: 22616, cores: 2)
+spawned uWSGI worker 4 (pid: 22617, cores: 2)
+spawned uWSGI http 1 (pid: 22618)
+Internal Server Error: /static/css/app.css
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./cevrs/urls.py", line 20, in return_static
+    return serve(request, path, insecure, **kwargs)
+NameError: name 'serve' is not defined
+Internal Server Error: /static/js/vendor.js
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./cevrs/urls.py", line 20, in return_static
+    return serve(request, path, insecure, **kwargs)
+NameError: name 'serve' is not defined
+Internal Server Error: /static/js/manifest.js
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./cevrs/urls.py", line 20, in return_static
+    return serve(request, path, insecure, **kwargs)
+NameError: name 'serve' is not defined
+Internal Server Error: /static/js/app.js
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./cevrs/urls.py", line 20, in return_static
+    return serve(request, path, insecure, **kwargs)
+NameError: name 'serve' is not defined
+[uwsgi-http key: 134.175.189.199:8001 client_addr: 223.150.203.101 client_port: 62135] hr_write(): Broken pipe [plugins/http/http.c line 565]
+[uwsgi-http key: 134.175.189.199:8001 client_addr: 223.150.203.101 client_port: 62391] hr_write(): Broken pipe [plugins/http/http.c line 565]
+Internal Server Error: /static/js/vendor.js
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./cevrs/urls.py", line 20, in return_static
+    return serve(request, path, insecure, **kwargs)
+NameError: name 'serve' is not defined
+[uwsgi-http key: 134.175.189.199:8001 client_addr: 223.150.203.101 client_port: 64695] hr_write(): Broken pipe [plugins/http/http.c line 565]
+Internal Server Error: /static/js/app.js
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./cevrs/urls.py", line 20, in return_static
+    return serve(request, path, insecure, **kwargs)
+NameError: name 'serve' is not defined
+[uwsgi-http key: 134.175.189.199:8001 client_addr: 223.150.203.101 client_port: 65207] hr_write(): Broken pipe [plugins/http/http.c line 565]
+Internal Server Error: /static/js/manifest.js
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/usr/local/lib/python3.6/dist-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./cevrs/urls.py", line 20, in return_static
+    return serve(request, path, insecure, **kwargs)
+NameError: name 'serve' is not defined
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 22618)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Thu Feb 27 12:32:19 2020] ***
+compiled with version: 7.4.0 on 10 February 2020 10:53:21
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-0-7-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/cevrs/cevrs
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/cevrs/cevrs/
+your processes number limit is 7080
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :8001 fd 3
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 6
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Nov  7 2019, 10:44:02)  [GCC 8.3.0]
+Python main interpreter initialized at 0x55db56d40330
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55db56d40330 pid: 22867 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 22867)
+spawned uWSGI worker 1 (pid: 22869, cores: 2)
+spawned uWSGI worker 2 (pid: 22870, cores: 2)
+spawned uWSGI worker 3 (pid: 22871, cores: 2)
+spawned uWSGI worker 4 (pid: 22872, cores: 2)
+spawned uWSGI http 1 (pid: 22873)
+[uwsgi-http key: 134.175.189.199:8001 client_addr: 223.150.203.101 client_port: 15545] hr_write(): Broken pipe [plugins/http/http.c line 565]
+[uwsgi-http key: 134.175.189.199:8001 client_addr: 223.150.203.101 client_port: 23737] hr_write(): Broken pipe [plugins/http/http.c line 565]
+[uwsgi-http key: 134.175.189.199:8001 client_addr: 223.150.203.101 client_port: 26553] hr_write(): Broken pipe [plugins/http/http.c line 565]
+uwsgi_response_sendfile_do() TIMEOUT !!!
+OSError: write error
+[uwsgi-http key: 134.175.189.199:8001 client_addr: 223.150.203.101 client_port: 36539] hr_write(): Broken pipe [plugins/http/http.c line 565]
+Not Found: /favicon.ico
+Not Found: /w00tw00t.at.blackhats.romanian.anti-sec:)
+Not Found: /phpmyadmin/scripts/setup.php
+Not Found: /pma/scripts/setup.php
+Not Found: /myadmin/scripts/setup.php
+Not Found: /robots.txt
+Not Found: /sitemap.xml
+Not Found: /.well-known/security.txt
+Not Found: /favicon.ico
+Not Found: /incl/image_test.shtml
+Not Found: /owa/auth/logon.aspx
+Not Found: /solr/admin/info/system
+Not Found: /robots.txt
+Not Found: /index.php
+Not Found: /w00tw00t.at.blackhats.romanian.anti-sec:)
+Not Found: /phpMyAdmin/scripts/setup.php
+Not Found: /phpmyadmin/scripts/setup.php
+Not Found: /pma/scripts/setup.php
+Not Found: /myadmin/scripts/setup.php
+Not Found: /MyAdmin/scripts/setup.php
+Not Found: /Public/home/appjs/Index.js
+Not Found: /phpmyadmin
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /TP/public/index.php
+Not Found: /TP/index.php
+Not Found: /thinkphp/html/public/index.php
+Not Found: /html/public/index.php
+Not Found: /public/index.php
+Not Found: /TP/html/public/index.php
+Not Found: /elrekt.php
+Not Found: /index.php
+Not Found: /manager/html
+Not Found: /favicon.ico
+Not Found: /thinkphp/html/public/index.php
+Not Found: /html/public/index.php
+Not Found: /TP/public/index.php
+Not Found: /TP/index.php
+Not Found: /thinkphp/html/public/index.php
+Not Found: /html/public/index.php
+Not Found: /public/index.php
+Not Found: /TP/html/public/index.php
+Not Found: /elrekt.php
+Not Found: /index.php
+Not Found: /TP/index.php
+Not Found: /TP/public/index.php
+Not Found: /TP/index.php
+Not Found: /TP/public/index.php
+Not Found: /TP/index.php
+Not Found: /thinkphp/html/public/index.php
+Not Found: /html/public/index.php
+Not Found: /public/index.php
+Not Found: /TP/html/public/index.php
+Not Found: /elrekt.php
+Not Found: /index.php
+Not Found: /favicon.ico
+Not Found: /w00tw00t.at.blackhats.romanian.anti-sec:)
+Not Found: /phpMyAdmin/scripts/setup.php
+Not Found: /phpmyadmin/scripts/setup.php
+Not Found: /pma/scripts/setup.php
+Not Found: /myadmin/scripts/setup.php
+Not Found: /MyAdmin/scripts/setup.php
+Not Found: /elrekt.php
+Not Found: /gxgame/serverRestartCfg.json
+Not Found: /thinkphp/html/public/index.php
+Not Found: /TP/public/index.php
+Not Found: /TP/index.php
+Not Found: /thinkphp/html/public/index.php
+Not Found: /html/public/index.php
+Not Found: /public/index.php
+Not Found: /TP/html/public/index.php
+Not Found: /elrekt.php
+Not Found: /index.php
+Not Found: /robots.txt
+Not Found: /index.php
+Not Found: /phpmyadmin/index.php
+Not Found: /phpmyadmin
+Not Found: /portal/redlion
+Not Found: /english/
+Not Found: /shell
+Not Found: /robots.txt
+Not Found: /hudson
+Not Found: /echo.php
+Not Found: /phpmyadmin
+Not Found: /gxgame/serverRestartCfg.json
+Not Found: /TP/public/index.php
+Not Found: /TP/index.php
+Not Found: /thinkphp/html/public/index.php
+Not Found: /html/public/index.php
+Not Found: /public/index.php
+Not Found: /TP/html/public/index.php
+Not Found: /elrekt.php
+Not Found: /index.php
+Not Found: /gxgame/serverRestartCfg.json
+Not Found: /manager/html
+Not Found: /index.php
+Not Found: /phpmyadmin/index.php
+Not Found: /index.action
+Not Found: /portal/redlion
+Not Found: /index.action
+Not Found: /TP/public/index.php
+Not Found: /TP/index.php
+Not Found: /index.php
+Not Found: /phpmyadmin/index.php
+Not Found: /owa/auth/logon.aspx
+Not Found: /admin/config.php
+Not Found: /manager/html
+Not Found: /GponForm/diag_Form
+Not Found: /index.php
+Not Found: /phpmyadmin/index.php
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /phpmyadmin
+Not Found: /solr/admin/info/system
+Not Found: /index.php
+Not Found: /hudson
+Not Found: /robots.txt
+Not Found: /index.php
+Not Found: /phpmyadmin/index.php
+Not Found: /phpmyadmin/
+Not Found: /phpmyadmin/
+Not Found: /pmd/
+Not Found: /pmd/
+Not Found: /pma/
+Not Found: /pma/
+Not Found: /phpmyadmin4.8.5/
+Not Found: /phpmyadmin4.8.5/
+Not Found: /phpmyadmin/
+Not Found: /phpmyadmin/
+Not Found: /pmd/
+Not Found: /pmd/
+Not Found: /pma/
+Not Found: /pma/
+Not Found: /phpmyadmin4.8.5/
+Not Found: /phpmyadmin4.8.5/
+Not Found: /portal/redlion
+Not Found: /robots.txt
+Not Found: /TP/public/index.php
+Not Found: /hudson
+Not Found: /index.php
+Not Found: /phpmyadmin/index.php
+Not Found: /admin/config.php
+Not Found: /GponForm/diag_Form
+Not Found: /robots.txt
+Not Found: /Adminc7bdaf86/Login.php
+Not Found: /l.php
+Not Found: /phpinfo.php
+Not Found: /test.php
+Not Found: /index.php
+Not Found: /bbs.php
+Not Found: /forums.php
+Not Found: /bbs/index.php
+Not Found: /forum/index.php
+Not Found: /forums/index.php
+Not Found: /cgi-bin/php
+Not Found: /cgi-bin/php5
+Not Found: /cgi-bin/php-cgi
+Not Found: /cgi-bin/php.cgi
+Not Found: /cgi-bin/php4
+Not Found: /help.php
+Not Found: /java.php
+Not Found: /_query.php
+Not Found: /test.php
+Not Found: /db_cts.php
+Not Found: /db_pma.php
+Not Found: /logon.php
+Not Found: /license.php
+Not Found: /log.php
+Not Found: /hell.php
+Not Found: /pmd_online.php
+Not Found: /x.php
+Not Found: /shell.php
+Not Found: /htdocs.php
+Not Found: /sane.php
+Not Found: /desktop.ini.php
+Not Found: /z.php
+Not Found: /lala.php
+Not Found: /lala-dpr.php
+Not Found: /wpo.php
+Not Found: /t6nv.php
+Not Found: /muhstik.php
+Not Found: /text.php
+Not Found: /wp-config.php
+Not Found: /muhstik.php
+Not Found: /muhstik2.php
+Not Found: /muhstiks.php
+Not Found: /lol.php
+Not Found: /uploader.php
+Not Found: /cmd.php
+Not Found: /cmv.php
+Not Found: /cmdd.php
+Not Found: /knal.php
+Not Found: /cmd.php
+Not Found: /shell.php
+Not Found: /appserv.php
+Not Found: /scripts/setup.php
+Not Found: /phpMyAdmin/scripts/setup.php
+Not Found: /scripts/db___.init.php
+Not Found: /phpmyadmin/scripts/db___.init.php
+Not Found: /phpMyAdmin/scripts/db___.init.php
+Not Found: /pma/scripts/setup.php
+Not Found: /PMA/scripts/setup.php
+Not Found: /myadmin/scripts/setup.php
+Not Found: /pma/scripts/db___.init.php
+Not Found: /PMA/scripts/db___.init.php
+Not Found: /myadmin/scripts/db___.init.php
+Not Found: /MyAdmin/scripts/db___.init.php
+Not Found: /plugins/weathermap/editor.php
+Not Found: /cacti/plugins/weathermap/editor.php
+Not Found: /weathermap/editor.php
+Not Found: /elrekt.php
+Not Found: /App/
+Not Found: /index.php/module/action/param1/${@die(md5(HelloThinkPHP))}
+Not Found: /index.php
+Not Found: /joomla/
+Not Found: /Joomla/
+Not Found: /d7.php
+Not Found: /1x.php
+Not Found: /home.php
+Not Found: /undx.php
+Not Found: /spider.php
+Not Found: /payload.php
+Not Found: /composers.php
+Not Found: /izom.php
+Not Found: /hue2.php
+Not Found: /Drupal.php
+Not Found: /lang.php
+Not Found: /izom.php
+Not Found: /payload.php
+Not Found: /new_license.php
+Not Found: /images/!.php
+Not Found: /hd.php
+Not Found: /images/up.php
+Not Found: /images/attari.php
+Not Found: /images/jsspwneed.php
+Not Found: /images/stories/cmd.php
+Not Found: /images/stories/filemga.php
+Not Found: /up.php
+Not Found: /laravel.php
+Not Found: /huoshan.php
+Not Found: /yu.php
+Not Found: /floaw.php
+Not Found: /doudou.php
+Not Found: /mjx.php
+Not Found: /xiaoxia.php
+Not Found: /yuyang.php
+Not Found: /zz.php
+Not Found: /coonig.php
+Not Found: /ak.php
+Not Found: /baidoubi.php
+Not Found: /hhhhhh.php
+Not Found: /no1.php
+Not Found: /python.php
+Not Found: /woshimengmei.php
+Not Found: /indea.php
+Not Found: /taisui.php
+Not Found: /xiaxia.php
+Not Found: /kk.php
+Not Found: /zzz.php
+Not Found: /99.php
+Not Found: /dp.php
+Not Found: /hs.php
+Not Found: /1ts.php
+Not Found: /haiyan.php
+Not Found: /phpdm.php
+Not Found: /root.php
+Not Found: /5678.php
+Not Found: /root11.php
+Not Found: /xiu.php
+Not Found: /xw.php
+Not Found: /9678.php
+Not Found: /wc.php
+Not Found: /xx.php
+Not Found: /s.php
+Not Found: /sheep.php
+Not Found: /my.php
+Not Found: /qq.php
+Not Found: /aaa.php
+Not Found: /jjj.php
+Not Found: /vvv.php
+Not Found: /ffr.php
+Not Found: /411.php
+Not Found: /421.php
+Not Found: /a411.php
+Not Found: /whoami.php
+Not Found: /seeyon/htmlofficeservlet
+Not Found: /secure/ContactAdministrators!default.jspa
+Not Found: /weaver/bsh.servlet.BshServlet
+Not Found: /solr/
+Not Found: /index.php
+Not Found: /user/register
+Not Found: /joomla/
+Not Found: /user.php
+Not Found: /phpmyadmin/index.php
+Not Found: /phpMyAdmin/index.php
+Not Found: /pmd/index.php
+Not Found: /pma/index.php
+Not Found: /PMA/index.php
+Not Found: /PMA2/index.php
+Not Found: /pmamy/index.php
+Not Found: /pmamy2/index.php
+Not Found: /mysql/index.php
+Not Found: /admin/index.php
+Not Found: /db/index.php
+Not Found: /dbadmin/index.php
+Not Found: /web/phpMyAdmin/index.php
+Not Found: /admin/pma/index.php
+Not Found: /admin/mysql/index.php
+Not Found: /admin/mysql2/index.php
+Not Found: /admin/phpmyadmin/index.php
+Not Found: /admin/phpMyAdmin/index.php
+Not Found: /admin/phpmyadmin2/index.php
+Not Found: /mysqladmin/index.php
+Not Found: /mysql_admin/index.php
+Not Found: /phpadmin/index.php
+Not Found: /phpAdmin/index.php
+Not Found: /phpmyadmin0/index.php
+Not Found: /phpmyadmin1/index.php
+Not Found: /phpmyadmin2/index.php
+Not Found: /phpMyAdmin-4.4.0/index.php
+Not Found: /phpMyAdmin4.8.0/index.php
+Not Found: /phpMyAdmin4.8.2/index.php
+Not Found: /phpMyAdmin4.8.3/index.php
+Not Found: /phpMyAdmin4.8.4/index.php
+Not Found: /phpMyAdmin4.8.5/index.php
+Not Found: /myadmin/index.php
+Not Found: /xampp/phpmyadmin/index.php
+Not Found: /phpMyadmin_bak/index.php
+Not Found: /www/phpMyAdmin/index.php
+Not Found: /tools/phpMyAdmin/index.php
+Not Found: /phpmyadmin-old/index.php
+Not Found: /phpMyAdmin.old/index.php
+Not Found: /pma-old/index.php
+Not Found: /claroline/phpMyAdmin/index.php
+Not Found: /typo3/phpmyadmin/index.php
+Not Found: /phpma/index.php
+Not Found: /phpmyadmin/phpmyadmin/index.php
+Not Found: /phpMyAdmin/phpMyAdmin/index.php
+Not Found: /phpMyAbmin/index.php
+Not Found: /phpMyAdmin__/index.php
+Not Found: /phpMyAdmin+++---/index.php
+Not Found: /v/index.php
+Not Found: /phpmyadm1n/index.php
+Not Found: /phpMyAdm1n/index.php
+Not Found: /shaAdmin/index.php
+Not Found: /phpMyadmi/index.php
+Not Found: /phpMyAdmion/index.php
+Not Found: /s/index.php
+Not Found: /MyAdmin/index.php
+Not Found: /phpMyAdmin1/index.php
+Not Found: /phpMyAdmin123/index.php
+Not Found: /pwd/index.php
+Not Found: /phpMyAdmina/index.php
+Not Found: /phpMydmin/index.php
+Not Found: /phpMyAdmins/index.php
+Not Found: /phpMyAdmin._/index.php
+Not Found: /phpMyAdmin._2/index.php
+Not Found: /phpmyadmin2222/index.php
+Not Found: /phpMyAdmin333/index.php
+Not Found: /phpmyadmin3333/index.php
+Not Found: /php2MyAdmin/index.php
+Not Found: /phpiMyAdmin/index.php
+Not Found: /phpNyAdmin/index.php
+Not Found: /1/index.php
+Not Found: /download/index.php
+Not Found: /phpMyAdmin_111/index.php
+Not Found: /321/index.php
+Not Found: /123131/index.php
+Not Found: /phpMyAdminn/index.php
+Not Found: /phpMyAdminhf/index.php
+Not Found: /sbb/index.php
+Not Found: /WWW/phpMyAdmin/index.php
+Not Found: /phpMyAdmln/index.php
+Not Found: /__phpMyAdmin/index.php
+Not Found: /program/index.php
+Not Found: /shopdb/index.php
+Not Found: /phppma/index.php
+Not Found: /phpmy/index.php
+Not Found: /mysql/admin/index.php
+Not Found: /mysql/dbadmin/index.php
+Not Found: /mysql/sqlmanager/index.php
+Not Found: /mysql/mysqlmanager/index.php
+Not Found: /wp-content/plugins/portable-phpmyadmin/wp-pma-mod/index.php
+Not Found: /sql/index.php
+Not Found: /SQL/index.php
+Not Found: /websql/index.php
+Not Found: /MySQLAdmin/index.php
+Not Found: /manager/html
+Not Found: /.git
+Not Found: /favicon.ico
+Not Found: /hudson
+Not Found: /ReportServer
+Not Found: /portal/redlion
+Not Found: /public/index.php
+Not Found: /public/index.php
+Not Found: /index.php
+Not Found: /index.php
+Not Found: /index.php
+Not Found: /admin/index.php
+Not Found: /admin/index.php
+Not Found: /Public/home/appjs/Index.js
+Not Found: /solr/admin/info/system
+Not Found: /index.php
+Not Found: /TP/public/index.php
+Not Found: /robots.txt
+Not Found: /favicon.ico
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /hudson
+Not Found: /http:/134.175.189.199:8001/
+Not Found: /sdk
+Not Found: /nmaplowercheck1583487180
+Not Found: /HNAP1
+Not Found: /evox/about
+Not Found: /portal/redlion
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /Adminc7bdaf86/Login.php
+Not Found: /TP/public/index.php
+Not Found: /TP/index.php
+Not Found: /thinkphp/html/public/index.php
+Not Found: /html/public/index.php
+Not Found: /public/index.php
+Not Found: /TP/html/public/index.php
+Not Found: /elrekt.php
+Not Found: /index.php
+Not Found: /TP/public/index.php
+Not Found: /TP/public/index.php
+Not Found: /TP/index.php
+Not Found: /thinkphp/html/public/index.php
+Not Found: /html/public/index.php
+Not Found: /public/index.php
+Not Found: /TP/html/public/index.php
+Not Found: /elrekt.php
+Not Found: /index.php
+Not Found: /hudson
+Not Found: /setup.cgi
+Not Found: /portal/redlion
+Not Found: /index.php
+Not Found: /phpmyadmin/index.php
+Not Found: /index.php
+Not Found: /phpmyadmin/index.php
+Not Found: /robots.txt
+Not Found: /manager/html
+Not Found: /TP/public/index.php
+Not Found: /TP/index.php
+Not Found: /thinkphp/html/public/index.php
+Not Found: /html/public/index.php
+Not Found: /public/index.php
+Not Found: /TP/html/public/index.php
+Not Found: /elrekt.php
+Not Found: /index.php
+Not Found: /admin/config.php
+Not Found: /hudson
+Not Found: /TP/public/index.php
+Not Found: /TP/index.php
+Not Found: /thinkphp/html/public/index.php
+Not Found: /html/public/index.php
+Not Found: /public/index.php
+Not Found: /TP/html/public/index.php
+Not Found: /elrekt.php
+Not Found: /index.php
+Not Found: /robots.txt
+Not Found: /sitemap.xml
+Not Found: /.well-known/security.txt
+Not Found: /favicon.ico
+Not Found: /echo.php
+Not Found: /robots.txt
+Not Found: /portal/redlion
+Not Found: /manager/text/list
+Not Found: /manager/html
+Not Found: /hudson
+Not Found: /solr/admin/info/system
+Not Found: /TP/public/index.php
+Not Found: /TP/index.php
+Not Found: /thinkphp/html/public/index.php
+Not Found: /html/public/index.php
+Not Found: /TP/public/index.php
+Not Found: /TP/index.php
+Not Found: /thinkphp/html/public/index.php
+Not Found: /html/public/index.php
+Not Found: /public/index.php
+Not Found: /TP/html/public/index.php
+Not Found: /elrekt.php
+Not Found: /index.php
+Not Found: /w00tw00t.at.blackhats.romanian.anti-sec:)
+Not Found: /phpMyAdmin/scripts/setup.php
+Not Found: /phpmyadmin/scripts/setup.php
+Not Found: /pma/scripts/setup.php
+Not Found: /myadmin/scripts/setup.php
+Not Found: /MyAdmin/scripts/setup.php
+Not Found: /sdk
+Not Found: /nmaplowercheck1583784763
+Not Found: /evox/about
+Not Found: /HNAP1
+Not Found: /portal/redlion
+Not Found: /shell
+Not Found: /setup.cgi
+Not Found: /hudson
+Not Found: /portal/redlion
+Not Found: /nmaplowercheck1583784763
+Not Found: /evox/about
+Not Found: /HNAP1
+Not Found: /example.com:443
+Not Found: /http:/123.125.114.144/
+Not Found: /index.php
+Not Found: /phpmyadmin/index.php
+Not Found: /.git/config
+Not Found: /robots.txt
+Not Found: /admin/cms/signin.action
+Not Found: /images/stories/index.do
+Not Found: /images/stories/index.action
+Not Found: /images/stories/index.jsp
+Not Found: /images/stories/index
+Not Found: /images/stories/index.html
+Not Found: /jenkins/login.jsp
+Not Found: /auth/signin.do
+Not Found: /admin/signin.action
+Not Found: /admin/signin.jsp
+Not Found: /portal/signin/signin.jsp
+Not Found: /learning/user/signin.do
+Not Found: /cgi-bin/php
+Not Found: /index.php
+Not Found: /phpmyadmin/index.php
+Not Found: /phpmyadmin/index.php
+Not Found: /index.php
+Not Found: /phpmyadmin/index.php
+Not Found: /index.php
+Not Found: /ReportServer
+uwsgi_response_sendfile_do() TIMEOUT !!!
+OSError: write error
+Not Found: /TP/public/index.php
+Not Found: /TP/index.php
+Not Found: /thinkphp/html/public/index.php
+Not Found: /html/public/index.php
+Not Found: /public/index.php
+Not Found: /TP/html/public/index.php
+Not Found: /elrekt.php
+Not Found: /index.php
+Not Found: /solr/admin/info/system
+Not Found: /index.php
+Not Found: /admin/config.php
+Not Found: /index.php
+
+Not Found: /TP/public/index.php
+Not Found: /TP/index.php
+Not Found: /thinkphp/html/public/index.php
+Not Found: /html/public/index.php
+Not Found: /public/index.php
+Not Found: /TP/html/public/index.php
+Not Found: /elrekt.php
+Not Found: /index.php
+Not Found: /xprober.php
+Not Found: /phpinfo.php
+Not Found: /hudson
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /GponForm/diag_Form
+Not Found: /TP/public/index.php
+Not Found: /TP/index.php
+Not Found: /thinkphp/html/public/index.php
+Not Found: /html/public/index.php
+Not Found: /public/index.php
+Not Found: /TP/html/public/index.php
+Not Found: /elrekt.php
+Not Found: /index.php
+Not Found: /phpMyAdmin/
+Not Found: /phpmyadmin/
+Not Found: /setup.cgi
+Not Found: /portal/redlion
+Not Found: /solr/admin/info/system
+Not Found: /index.php
+Not Found: /sdk
+Not Found: /nmaplowercheck1584134365
+Not Found: /HNAP1
+Not Found: /evox/about
+Not Found: /shell
+Not Found: /index.php
+Not Found: /phpmyadmin/index.php
+Not Found: /hudson
+Not Found: /phpMyAdmin/
+Not Found: /phpmyadmin/
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /ssf.zip
+Not Found: /solr/
+Not Found: /manager/html
+Not Found: /GponForm/diag_Form
+Not Found: /portal/redlion
+Not Found: /w00tw00t.at.blackhats.romanian.anti-sec:)
+Not Found: /phpmyadmin/scripts/setup.php
+Not Found: /phpMyAdmin/scripts/setup.php
+Not Found: /mysqladmin/scripts/setup.php
+Not Found: /PMA2012/scripts/setup.php
+Not Found: /pma2012/scripts/setup.php
+Not Found: /PMA2011/scripts/setup.php
+Not Found: /pma2011/scripts/setup.php
+Not Found: /PMA2013/scripts/setup.php
+Not Found: /pma2013/scripts/setup.php
+Not Found: /PMA2014/scripts/setup.php
+Not Found: /pma2014/scripts/setup.php
+Not Found: /PMA2015/scripts/setup.php
+Not Found: /pma2015/scripts/setup.php
+Not Found: /PMA2016/scripts/setup.php
+Not Found: /pma2016/scripts/setup.php
+Not Found: /phpmyadmin2/scripts/setup.php
+Not Found: /phpmyadmin3/scripts/setup.php
+Not Found: /phpmyadmin4/scripts/setup.php
+Not Found: /phpmyadmin5/scripts/setup.php
+Not Found: /phpmyadmin6/scripts/setup.php
+Not Found: /phpmyadmin7/scripts/setup.php
+Not Found: /pma/scripts/setup.php
+Not Found: /myadmin/scripts/setup.php
+Not Found: /MyAdmin/scripts/setup.php
+Not Found: /mysql/scripts/setup.php
+Not Found: /phpMyAdmin-2.10.0.0/scripts/setup.php
+Not Found: /phpMyAdmin-2.11.11/scripts/setup.php
+Not Found: /phpMyAdmin-2.11.11.3/scripts/setup.php
+Not Found: /phpMyAdmin-3.0.0.0-all-languages/scripts/setup.php
+Not Found: /dbadmin/scripts/setup.php
+Not Found: /db/scripts/setup.php
+Not Found: /scripts/setup.php
+Not Found: /phpMyAdmin-2/scripts/setup.php
+Not Found: /mysql/scripts/setup.php
+Not Found: /solr/admin/info/system
+Not Found: /index.php
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /nmaplowercheck1584134365
+Not Found: /example.com:443
+Not Found: /HNAP1
+Not Found: /evox/about
+Not Found: /setup.cgi
+Not Found: /robots.txt
+Not Found: /manager/html
+Not Found: /favicon.ico
+Not Found: /english/
+Not Found: /404/search_children.js
+Not Found: /http:/www.qq.com/404/search_children.js
+Not Found: /hudson
+Not Found: /w00tw00t.at.blackhats.romanian.anti-sec:)
+Not Found: /phpMyAdmin/scripts/setup.php
+Not Found: /phpmyadmin/scripts/setup.php
+Not Found: /pma/scripts/setup.php
+Not Found: /myadmin/scripts/setup.php
+Not Found: /MyAdmin/scripts/setup.php
+Not Found: /portal/redlion
+Not Found: /phpmyadmin/
+Not Found: /sdk
+Not Found: /nmaplowercheck1584313900
+Not Found: /evox/about
+Not Found: /HNAP1
+Not Found: /echo.php
+Not Found: /phpinfo.php
+Not Found: /shell
+Not Found: /solr/admin/info/system
+Not Found: /index.php
+Not Found: /manager/text/list
+Not Found: /TP/public/index.php
+Not Found: /TP/index.php
+Not Found: /thinkphp/html/public/index.php
+Not Found: /html/public/index.php
+Not Found: /public/index.php
+Not Found: /TP/html/public/index.php
+Not Found: /elrekt.php
+Not Found: /index.php
+Not Found: /evox/about
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /favicon.ico
+Not Found: /hudson
+Not Found: /http:/134.175.189.199:8001/
+Not Found: /manager/html
+Not Found: /portal/redlion
+Not Found: /manager/html
+Not Found: /TP/public/index.php
+Not Found: /TP/index.php
+Not Found: /thinkphp/html/public/index.php
+Not Found: /html/public/index.php
+Not Found: /public/index.php
+Not Found: /TP/html/public/index.php
+Not Found: /elrekt.php
+Not Found: /index.php
+Not Found: /solr/admin/info/system
+Not Found: /index.php
+Not Found: /setup.cgi
+Not Found: /nmaplowercheck1584313900
+Not Found: /evox/about
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /HNAP1
+Not Found: /setup.cgi
+Not Found: /hudson
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /TP/public/index.php
+Not Found: /TP/index.php
+Not Found: /thinkphp/html/public/index.php
+Not Found: /html/public/index.php
+Not Found: /public/index.php
+Not Found: /TP/html/public/index.php
+Not Found: /elrekt.php
+Not Found: /index.php
+Not Found: /TP/public/index.php
+Not Found: /TP/index.php
+Not Found: /thinkphp/html/public/index.php
+Not Found: /html/public/index.php
+Not Found: /public/index.php
+Not Found: /TP/html/public/index.php
+Not Found: /elrekt.php
+Not Found: /index.php
+Not Found: /solr/admin/info/system
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /index.php
+Not Found: /TP/public/index.php
+Not Found: /TP/index.php
+Not Found: /thinkphp/html/public/index.php
+Not Found: /html/public/index.php
+Not Found: /public/index.php
+Not Found: /TP/html/public/index.php
+Not Found: /elrekt.php
+Not Found: /index.php
+Not Found: /robots.txt
+Not Found: /Adminc7bdaf86/Login.php
+Not Found: /l.php
+Not Found: /phpinfo.php
+Not Found: /test.php
+Not Found: /index.php
+Not Found: /bbs.php
+Not Found: /forum.php
+Not Found: /forums.php
+Not Found: /bbs/index.php
+Not Found: /forum/index.php
+Not Found: /forums/index.php
+Not Found: /webdav/
+Not Found: /help.php
+Not Found: /java.php
+Not Found: /_query.php
+Not Found: /test.php
+Not Found: /db_cts.php
+Not Found: /logon.php
+Not Found: /help-e.php
+Not Found: /license.php
+Not Found: /log.php
+Not Found: /hell.php
+Not Found: /pmd_online.php
+Not Found: /x.php
+Not Found: /shell.php
+Not Found: /htdocs.php
+Not Found: /b.php
+Not Found: /sane.php
+Not Found: /desktop.ini.php
+Not Found: /z.php
+Not Found: /lala.php
+Not Found: /lala-dpr.php
+Not Found: /wpc.php
+Not Found: /wpo.php
+Not Found: /t6nv.php
+Not Found: /muhstik.php
+Not Found: /text.php
+Not Found: /wp-config.php
+Not Found: /muhstik2.php
+Not Found: /muhstiks.php
+Not Found: /muhstik-dpr.php
+Not Found: /lol.php
+Not Found: /uploader.php
+Not Found: /cmd.php
+Not Found: /cmv.php
+Not Found: /cmdd.php
+Not Found: /knal.php
+Not Found: /cmd.php
+Not Found: /shell.php
+Not Found: /appserv.php
+Not Found: /scripts/setup.php
+Not Found: /phpmyadmin/scripts/setup.php
+Not Found: /phpMyAdmin/scripts/setup.php
+Not Found: /scripts/db___.init.php
+Not Found: /phpmyadmin/scripts/db___.init.php
+Not Found: /phpMyAdmin/scripts/db___.init.php
+Not Found: /PMA/scripts/setup.php
+Not Found: /myadmin/scripts/setup.php
+Not Found: /MyAdmin/scripts/setup.php
+Not Found: /pma/scripts/db___.init.php
+Not Found: /PMA/scripts/db___.init.php
+Not Found: /myadmin/scripts/db___.init.php
+Not Found: /MyAdmin/scripts/db___.init.php
+Not Found: /plugins/weathermap/editor.php
+Not Found: /cacti/plugins/weathermap/editor.php
+Not Found: /weathermap/editor.php
+Not Found: /index.php
+Not Found: /App/
+Not Found: /index.php/module/action/param1/${@die(md5(HelloThinkPHP))}
+Not Found: /index.php
+Not Found: /joomla/
+Not Found: /Joomla/
+Not Found: /d7.php
+Not Found: /rxr.php
+Not Found: /1x.php
+Not Found: /home.php
+Not Found: /undx.php
+Not Found: /spider.php
+Not Found: /payload.php
+Not Found: /composers.php
+Not Found: /composer.php
+Not Found: /hue2.php
+Not Found: /Drupal.php
+Not Found: /lang.php
+Not Found: /izom.php
+Not Found: /payload.php
+Not Found: /new_license.php
+Not Found: /images/!.php
+Not Found: /images/vuln.php
+Not Found: /hd.php
+Not Found: /images/up.php
+Not Found: /images/attari.php
+Not Found: /images/jsspwneed.php
+Not Found: /images/stories/cmd.php
+Not Found: /images/stories/filemga.php
+Not Found: /up.php
+Not Found: /laravel.php
+Not Found: /huoshan.php
+Not Found: /yu.php
+Not Found: /floaw.php
+Not Found: /ftmabc.php
+Not Found: /doudou.php
+Not Found: /mjx.php
+Not Found: /xiaoxia.php
+Not Found: /yuyang.php
+Not Found: /coonig.php
+Not Found: /ak.php
+Not Found: /baidoubi.php
+Not Found: /hhhhhh.php
+Not Found: /meijianxue.php
+Not Found: /no1.php
+Not Found: /python.php
+Not Found: /woshimengmei.php
+Not Found: /indea.php
+Not Found: /taisui.php
+Not Found: /xiaxia.php
+Not Found: /kk.php
+Not Found: /zzz.php
+Not Found: /99.php
+Not Found: /dp.php
+Not Found: /hs.php
+Not Found: /1ts.php
+Not Found: /haiyan.php
+Not Found: /phpdm.php
+Not Found: /root.php
+Not Found: /5678.php
+Not Found: /root11.php
+Not Found: /xiu.php
+Not Found: /wuwu11.php
+Not Found: /xw.php
+Not Found: /xw1.php
+Not Found: /9678.php
+Not Found: /wc.php
+Not Found: /xx.php
+Not Found: /xx.php
+Not Found: /s.php
+Not Found: /w.php
+Not Found: /sheep.php
+Not Found: /qaq.php
+Not Found: /my.php
+Not Found: /qq.php
+Not Found: /aaa.php
+Not Found: /hhh.php
+Not Found: /jjj.php
+Not Found: /vvv.php
+Not Found: /www.php
+Not Found: /ffr.php
+Not Found: /411.php
+Not Found: /415.php
+Not Found: /421.php
+Not Found: /444.php
+Not Found: /a411.php
+Not Found: /whoami.php
+Not Found: /whoami.php.php
+Not Found: /9.php
+Not Found: /98k.php
+Not Found: /981.php
+Not Found: /887.php
+Not Found: /888.php
+Not Found: /aa.php
+Not Found: /bb.php
+Not Found: /pp.php
+Not Found: /tt.php
+Not Found: /bbq.php
+Not Found: /jj1.php
+Not Found: /7o.php
+Not Found: /qwq.php
+Not Found: /nb.php
+Not Found: /kpl.php
+Not Found: /hgx.php
+Not Found: /ppl.php
+Not Found: /tty.php
+Not Found: /aap.php
+Not Found: /app.php
+Not Found: /bbr.php
+Not Found: /ioi.php
+Not Found: /uuu.php
+Not Found: /yyy.php
+Not Found: /ack.php
+Not Found: /shh.php
+Not Found: /ddd.php
+Not Found: /nnn.php
+Not Found: /rrr.php
+Not Found: /bbqq.php
+Not Found: /tyrant.php
+Not Found: /qiqi.php
+Not Found: /qiqi1.php
+Not Found: /zhk.php
+Not Found: /bbv.php
+Not Found: /605.php
+Not Found: /admin1.php
+Not Found: /xi.php
+Not Found: /999.php
+Not Found: /jsc.php
+Not Found: /jsc.php.php
+Not Found: /jsc.php
+Not Found: /11a.php
+Not Found: /kkl.php
+Not Found: /ks1.php
+Not Found: /ooo.php
+Not Found: /wsx.php
+Not Found: /lz.php
+Not Found: /zmp.php
+Not Found: /803.php
+Not Found: /zzz.php
+Not Found: /ze.php
+Not Found: /nnb.php
+Not Found: /lkio.php
+Not Found: /mm.php
+Not Found: /mmp.php
+Not Found: /hades.php
+Not Found: /muma.php
+Not Found: /shell.php
+Not Found: /zza.php
+Not Found: /ag.php
+Not Found: /2ndex.php
+Not Found: /my.php
+Not Found: /aa.php
+Not Found: /qq.php
+Not Found: /config.php
+Not Found: /1.php
+Not Found: /1.php
+Not Found: /miao.php
+Not Found: /j.php
+Not Found: /cc.php
+Not Found: /xiaodai.php
+Not Found: /abak.php
+Not Found: /pass.php
+Not Found: /olelist.php
+Not Found: /a.php
+Not Found: /t00ls.php
+Not Found: /about_ver.php
+Not Found: /edmin.php
+Not Found: /sconfig.php
+Not Found: /indax.php
+Not Found: /logo.php
+Not Found: /o.php
+Not Found: /shell.php
+Not Found: /tools.php
+Not Found: /asjc.php
+Not Found: /test.php
+Not Found: /fuck.php
+Not Found: /freebook.php
+Not Found: /goodbook.php
+Not Found: /tools.php
+Not Found: /indexl.php
+Not Found: /gotemp.php
+Not Found: /sql.php
+Not Found: /conf.php
+Not Found: /pagefile.php
+Not Found: /settings.php
+Not Found: /system.php
+Not Found: /test123.php
+Not Found: /think.php
+Not Found: /db.init.php
+Not Found: /db_session.init.php
+Not Found: /db__.init.php
+Not Found: /wp-admins.php
+Not Found: /m.php
+Not Found: /error.php
+Not Found: /099.php
+Not Found: /_404.php
+Not Found: /Alarg53.php
+Not Found: /lapan.php
+Not Found: /p34ky1337.php
+Not Found: /pk1914.php
+Not Found: /sllolx.php
+Not Found: /Skri.php
+Not Found: /db_dataml.php
+Not Found: /db_desql.php
+Not Found: /mx.php
+Not Found: /wshell.php
+Not Found: /xshell.php
+Not Found: /qq.php
+Not Found: /conflg.php
+Not Found: /conflg.php
+Not Found: /lindex.php
+Not Found: /phpstudy.php
+Not Found: /phpStudy.php
+Not Found: /weixiao.php
+Not Found: /feixiang.php
+Not Found: /ak47.php
+Not Found: /ak48.php
+Not Found: /xiao.php
+Not Found: /yao.php
+Not Found: /defect.php
+Not Found: /webslee.php
+Not Found: /q.php
+Not Found: /pe.php
+Not Found: /hm.php
+Not Found: /sz.php
+Not Found: /zuoshou.php
+Not Found: /zuo.php
+Not Found: /aotu.php
+Not Found: /aotu7.php
+Not Found: /cmd.php
+Not Found: /cmd.php
+Not Found: /bak.php
+Not Found: /system.php
+Not Found: /l6.php
+Not Found: /l7.php
+Not Found: /l8.php
+Not Found: /q.php
+Not Found: /56.php
+Not Found: /mz.php
+Not Found: /yumo.php
+Not Found: /min.php
+Not Found: /wan.php
+Not Found: /ssaa.php
+Not Found: /ssaa.php
+Not Found: /qq.php
+Not Found: /aw.php
+Not Found: /12.php
+Not Found: /hh.php
+Not Found: /ak.php
+Not Found: /ip.php
+Not Found: /infoo.php
+Not Found: /qwe.php
+Not Found: /1213.php
+Not Found: /post.php
+Not Found: /aaaa.php
+Not Found: /h1.php
+Not Found: /test.php
+Not Found: /3.php
+Not Found: /4.php
+Not Found: /phpinfi.php
+Not Found: /9510.php
+Not Found: /python.php
+Not Found: /default.php
+Not Found: /sean.php
+Not Found: /app.php
+Not Found: /help.php
+Not Found: /tiandi.php
+Not Found: /xz.php
+Not Found: /beimeng.php
+Not Found: /linuxse.php
+Not Found: /zuoindex.php
+Not Found: /zshmindex.php
+Not Found: /tomcat.php
+Not Found: /ceshi.php
+Not Found: /1hou.php
+Not Found: /zuos.php
+Not Found: /zuoss.php
+Not Found: /zuoshss.php
+Not Found: /789056.php
+Not Found: /abc776.php
+Not Found: /afafaf.php
+Not Found: /jyyy.php
+Not Found: /ooo23.php
+Not Found: /htfr.php
+Not Found: /boots.php
+Not Found: /she.php
+Not Found: /s.php
+Not Found: /qw.php
+Not Found: /test.php
+Not Found: /caonma.php
+Not Found: /wcp.php
+Not Found: /u.php
+Not Found: /uu.php
+Not Found: /uuu.php
+Not Found: /sss.php
+Not Found: /ooo.php
+Not Found: /ss.php
+Not Found: /ss.php
+Not Found: /sss.php
+Not Found: /mazi.php
+Not Found: /phpini.php
+Not Found: /1.php
+Not Found: /2.php
+Not Found: /core.php
+Not Found: /qaz.php
+Not Found: /sha.php
+Not Found: /ppx.php
+Not Found: /confg.php
+Not Found: /conf1g.php
+Not Found: /confg.php
+Not Found: /confg.php
+Not Found: /confg.php
+Not Found: /ver.php
+Not Found: /hack.php
+Not Found: /hack.php
+Not Found: /qa.php
+Not Found: /xxx.php
+Not Found: /92.php
+Not Found: /z.php
+Not Found: /x.php
+Not Found: /dexgp.php
+Not Found: /nuoxi.php
+Not Found: /godkey.php
+Not Found: /okokok.php
+Not Found: /erwa.php
+Not Found: /pma.php
+Not Found: /ruyi.php
+Not Found: /51314.php
+Not Found: /5201314.php
+Not Found: /fusheng.php
+Not Found: /general.php
+Not Found: /repeat.php
+Not Found: /ldw.php
+Not Found: /api.php
+Not Found: /s1.php
+Not Found: /hello.php
+Not Found: /hello.php
+Not Found: /admn.php
+Not Found: /hell.php
+Not Found: /hell.php
+Not Found: /xp.php
+Not Found: /1.php
+Not Found: /2.php
+Not Found: /p.php
+Not Found: /1.php
+Not Found: /a.php
+Not Found: /m.php
+Not Found: /conf.php
+Not Found: /123.php
+Not Found: /1234.php
+Not Found: /HX.php
+Not Found: /diy.php
+Not Found: /666.php
+Not Found: /qwq.php
+Not Found: /qwqw.php
+Not Found: /.php
+Not Found: /infos.php
+Not Found: /x.php
+Not Found: /lucky.php
+Not Found: /zzk.php
+Not Found: /toor.php
+Not Found: /uu.php
+Not Found: /a.php
+Not Found: /aaa.php
+Not Found: /wb.php
+Not Found: /yj.php
+Not Found: /z.php
+Not Found: /7.php
+Not Found: /xiaoma.php
+Not Found: /xiaomae.php
+Not Found: /xiaomar.php
+Not Found: /qq.php
+Not Found: /data.php
+Not Found: /log.php
+Not Found: /fack.php
+Not Found: /angge.php
+Not Found: /cxfm666.php
+Not Found: /db.php
+Not Found: /hacly.php
+Not Found: /xiaomo.php
+Not Found: /xiaoyu.php
+Not Found: /xiaohei.php
+Not Found: /lost.php
+Not Found: /php.php
+Not Found: /win.php
+Not Found: /win1.php
+Not Found: /linux.php
+Not Found: /linux1.php
+Not Found: /CC.php
+Not Found: /x.php
+Not Found: /lanke.php
+Not Found: /seeyon/htmlofficeservlet
+Not Found: /secure/ContactAdministrators!default.jspa
+Not Found: /weaver/bsh.servlet.BshServlet
+Not Found: /solr/
+Not Found: /index.php
+Not Found: /user/register
+Not Found: /joomla/
+Not Found: /user.php
+Not Found: /index.php
+Not Found: /phpmyadmin/index.php
+Not Found: /phpMyAdmin/index.php
+Not Found: /pmd/index.php
+Not Found: /pma/index.php
+Not Found: /PMA/index.php
+Not Found: /PMA2/index.php
+Not Found: /pmamy/index.php
+Not Found: /pmamy2/index.php
+Not Found: /mysql/index.php
+Not Found: /admin/index.php
+Not Found: /db/index.php
+Not Found: /dbadmin/index.php
+Not Found: /web/phpMyAdmin/index.php
+Not Found: /admin/pma/index.php
+Not Found: /admin/PMA/index.php
+Not Found: /admin/mysql/index.php
+Not Found: /admin/mysql2/index.php
+Not Found: /admin/phpmyadmin/index.php
+Not Found: /admin/phpMyAdmin/index.php
+Not Found: /admin/phpmyadmin2/index.php
+Not Found: /mysqladmin/index.php
+Not Found: /mysql-admin/index.php
+Not Found: /mysql_admin/index.php
+Not Found: /phpadmin/index.php
+Not Found: /phpAdmin/index.php
+Not Found: /phpmyadmin0/index.php
+Not Found: /phpmyadmin2/index.php
+Not Found: /phpMyAdmin-4.4.0/index.php
+Not Found: /phpMyAdmin4.8.0/index.php
+Not Found: /phpMyAdmin4.8.1/index.php
+Not Found: /phpMyAdmin4.8.2/index.php
+Not Found: /phpMyAdmin4.8.3/index.php
+Not Found: /phpMyAdmin4.8.4/index.php
+Not Found: /phpMyAdmin4.8.5/index.php
+Not Found: /myadmin/index.php
+Not Found: /myadmin2/index.php
+Not Found: /xampp/phpmyadmin/index.php
+Not Found: /phpMyadmin_bak/index.php
+Not Found: /www/phpMyAdmin/index.php
+Not Found: /tools/phpMyAdmin/index.php
+Not Found: /phpmyadmin-old/index.php
+Not Found: /phpMyAdminold/index.php
+Not Found: /phpMyAdmin.old/index.php
+Not Found: /pma-old/index.php
+Not Found: /claroline/phpMyAdmin/index.php
+Not Found: /typo3/phpmyadmin/index.php
+Not Found: /phpma/index.php
+Not Found: /phpmyadmin/phpmyadmin/index.php
+Not Found: /phpMyAdmin/phpMyAdmin/index.php
+Not Found: /phpMyAbmin/index.php
+Not Found: /phpMyAdmin__/index.php
+Not Found: /phpMyAdmin+++---/index.php
+Not Found: /v/index.php
+Not Found: /phpmyadm1n/index.php
+Not Found: /phpMyAdm1n/index.php
+Not Found: /shaAdmin/index.php
+Not Found: /phpMyadmi/index.php
+Not Found: /phpMyAdmion/index.php
+Not Found: /s/index.php
+Not Found: /MyAdmin/index.php
+Not Found: /phpMyAdmin1/index.php
+Not Found: /phpMyAdmin123/index.php
+Not Found: /pwd/index.php
+Not Found: /phpMyAdmina/index.php
+Not Found: /phpMydmin/index.php
+Not Found: /phpMyAdmins/index.php
+Not Found: /phpMyAdmin._/index.php
+Not Found: /phpMyAdmin._2/index.php
+Not Found: /phpmyadmin2222/index.php
+Not Found: /phpMyAdmin333/index.php
+Not Found: /phpmyadmin3333/index.php
+Not Found: /php2MyAdmin/index.php
+Not Found: /phpiMyAdmin/index.php
+Not Found: /phpNyAdmin/index.php
+Not Found: /1/index.php
+Not Found: /download/index.php
+Not Found: /phpMyAdmin_111/index.php
+Not Found: /phpmadmin/index.php
+Not Found: /321/index.php
+Not Found: /123131/index.php
+Not Found: /phpMyAdminn/index.php
+Not Found: /phpMyAdminhf/index.php
+Not Found: /sbb/index.php
+Not Found: /WWW/phpMyAdmin/index.php
+Not Found: /phpMyAdmln/index.php
+Not Found: /phpMyAdmin_ai/index.php
+Not Found: /__phpMyAdmin/index.php
+Not Found: /program/index.php
+Not Found: /shopdb/index.php
+Not Found: /phppma/index.php
+Not Found: /phpmy/index.php
+Not Found: /mysql/admin/index.php
+Not Found: /mysql/dbadmin/index.php
+Not Found: /mysql/sqlmanager/index.php
+Not Found: /mysql/mysqlmanager/index.php
+Not Found: /wp-content/plugins/portable-phpmyadmin/wp-pma-mod/index.php
+Not Found: /sqladmin/index.php
+Not Found: /sql/index.php
+Not Found: /SQL/index.php
+Not Found: /websql/index.php
+Not Found: /MySQLAdmin/index.php
+Not Found: /manager/html
+Not Found: /TP/public/index.php
+Not Found: /TP/index.php
+Not Found: /thinkphp/html/public/index.php
+Not Found: /html/public/index.php
+Not Found: /public/index.php
+Not Found: /TP/html/public/index.php
+Not Found: /elrekt.php
+Not Found: /index.php
+Not Found: /http:/134.175.189.199:8001/
+Not Found: /portal/redlion
+Not Found: /nice ports,/Trinity.txt.bak
+Not Found: /phpMyAdmin/
+Not Found: /phpmyadmin/
+Not Found: /nice ports,/Trinity.txt.bak
+Not Found: /sip:nm
+Not Found: /*
+Not Found: /*
+Not Found: /html/public/index.php
+Not Found: /nice ports,/Trinity.txt.bak
+Not Found: /thinkphp/html/public/index.php
+Not Found: /elrekt.php
+Not Found: /index.php
+Not Found: /public/index.php
+Not Found: /TP/index.php
+Not Found: /phpmyadmin/
+Not Found: /solr/admin/info/system
+Not Found: /index.php
+Not Found: /WS/MobileInterface.ashx
+Not Found: /http:/www.msftncsi.com/ncsi.txt
+Not Found: /HNAP1/
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /hudson
+Not Found: /index.php
+Not Found: /WS/MobileInterface.ashx
+Not Found: /http:/134.175.189.199:8001/
+Not Found: /portal/redlion
+Not Found: /login.php
+Not Found: /phpmyadmin/
+Not Found: /ReportServer
+Not Found: /hudson
+Not Found: /robots.txt
+Not Found: /solr/admin/info/system
+Not Found: /phpmyadmin
+Not Found: /index.php
+Not Found: /manager/html
+Not Found: /api/statistics/service-usage-amount
+Not Found: /source/pack/upload/install/ios.php
+Not Found: /_async/AsyncResponseService
+Not Found: /etc/passwd
+Not Found: /Spread/DownLoad.aspx
+Not Found: /public/index.php
+Not Found: /index.php
+Not Found: /phpmyadmin/index.php
+Not Found: /portal/redlion
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /tools/KindEditorUpload.ashx
+Not Found: /Spread/DownLoad.aspx
+Not Found: /example.com:443
+Not Found: /robots.txt
+Not Found: /robots.txt
+Not Found: /sitemap.xml
+Not Found: /.well-known/security.txt
+Not Found: /favicon.ico
+Not Found: /solr/admin/info/system
+Not Found: /index.php
+Not Found: /hudson
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /cgi-bin/php
+Not Found: /GponForm/diag_Form
+[uwsgi-http key:  client_addr: 185.202.1.81 client_port: 5248] hr_read(): Connection reset by peer [plugins/http/http.c line 917]
+[uwsgi-http key:  client_addr: 185.202.1.81 client_port: 43866] hr_read(): Connection reset by peer [plugins/http/http.c line 917]
+Not Found: /WS/MobileInterface.ashx
+Not Found: /portal/redlion
+Not Found: /cgi-bin/php5
+Not Found: /TP/public/index.php
+Not Found: /TP/index.php
+Not Found: /thinkphp/html/public/index.php
+Not Found: /html/public/index.php
+Not Found: /public/index.php
+Not Found: /TP/html/public/index.php
+Not Found: /elrekt.php
+Not Found: /index.php
+Not Found: /index.php
+Not Found: /phpmyadmin/index.php
+Not Found: /2phpmyadmin/scripts/setup.php
+Not Found: /database/scripts/setup.php
+Not Found: /dbadmin/scripts/setup.php
+Not Found: /db/phpmyadmin/scripts/setup.php
+Not Found: /db/scripts/setup.php
+Not Found: /myadmin/scripts/setup.php
+Not Found: /MyAdmin/scripts/setup.php
+Not Found: /my/scripts/setup.php
+Not Found: /mysql/admin/scripts/setup.php
+Not Found: /mysql/scripts/setup.php
+Not Found: /phpadmin/scripts/setup.php
+Not Found: /phpAdmin/scripts/setup.php
+Not Found: /~/phpmanager/scripts/setup.php
+Not Found: /phpmyadmin1/scripts/setup.php
+Not Found: /phpmyadmin2011/scripts/setup.php
+Not Found: /phpMyAdmin-2.5.5/scripts/setup.php
+Not Found: /phpmyadmin2/scripts/setup.php
+Not Found: /phpmyadmin3/scripts/setup.php
+Not Found: /phpmyadmin/4.2/installing/
+Not Found: /phpmyadmin4/scripts/setup.php
+Not Found: /phpMyAdmin/scripts/config.inc.php
+Not Found: /phpmyadmin/scripts/db___.init.php
+Not Found: /phpMyAdmin/scripts/db___.init.php
+Not Found: /_phpmyadmin/scripts/setup.php
+Not Found: /phpmy-admin/scripts/setup.php
+Not Found: /phpmyadmin/scripts/setup.php
+Not Found: /_phpMyAdmin/scripts/setup.php
+Not Found: /phpMyAdmin/scripts/setup.php
+Not Found: /_pHpMyAdMiN/scripts/setup.php
+Not Found: /pHpMyAdMiN/scripts/setup.php
+Not Found: /_PHPMYADMIN/scripts/setup.php
+Not Found: /PHPMYADMIN/scripts/setup.php
+Not Found: /phpMyAdmin/setup/setup.php
+Not Found: /phpMyAds/scripts/setup.php
+Not Found: /phppgadmin/scripts/setup.php
+Not Found: /phppma/scripts/setup.php
+Not Found: /pma2011/
+Not Found: /PMA2011/scripts/setup.php
+Not Found: /pma2012/
+Not Found: /PMA2012/scripts/setup.php
+Not Found: /p/m/a/scripts/setup.php
+Not Found: /pma/scripts/setup.php
+Not Found: /scripts/setup.php
+Not Found: /setup.php
+Not Found: /sqladmin/scripts/setup.php
+Not Found: /SQL/scripts/setup.php
+Not Found: /sqlweb/scripts/setup.php
+Not Found: /phpmoadmin/scripts/setup.php
+Not Found: /sqladm/scripts/setup.php
+Not Found: /TP/public/index.php
+Not Found: /TP/index.php
+Not Found: /thinkphp/html/public/index.php
+Not Found: /html/public/index.php
+Not Found: /public/index.php
+Not Found: /TP/html/public/index.php
+Not Found: /elrekt.php
+Not Found: /index.php
+Not Found: /shell
+Not Found: /hudson
+[uwsgi-http key:  client_addr: 185.202.1.189 client_port: 61183] hr_read(): Connection reset by peer [plugins/http/http.c line 917]
+Not Found: /TP/index.php
+Not Found: /elrekt.php
+Not Found: /TP/html/public/index.php
+Not Found: /thinkphp/html/public/index.php
+Not Found: /Login.aspx
+Not Found: /public/index.php
+Not Found: /wp-admin.php
+Not Found: /readme.html
+Not Found: /manager/html
+Not Found: /html/public/index.php
+Not Found: /TP/public/index.php
+Not Found: /index.php
+Not Found: /phpmyadmin/
+[uwsgi-http key:  client_addr: 92.246.76.200 client_port: 31227] hr_read(): Connection reset by peer [plugins/http/http.c line 917]
+Not Found: /muieblackcat
+Not Found: /phpMyAdmin/scripts/setup.php
+Not Found: /phpmyadmin/scripts/setup.php
+Not Found: /pma/scripts/setup.php
+Not Found: /myadmin/scripts/setup.php
+Not Found: /MyAdmin/scripts/setup.php
+Not Found: /portal/redlion
+Not Found: /robots.txt
+Not Found: /sitemap.xml
+Not Found: /.well-known/security.txt
+Not Found: /favicon.ico
+[uwsgi-http key:  client_addr: 92.246.76.200 client_port: 40438] hr_read(): Connection reset by peer [plugins/http/http.c line 917]
+Not Found: /TP/index.php
+Not Found: /TP/public/index.php
+Not Found: /elrekt.php
+Not Found: /thinkphp/html/public/index.php
+Not Found: /index.php
+Not Found: /html/public/index.php
+[uwsgi-http key:  client_addr: 193.106.29.66 client_port: 55536] hr_read(): Connection reset by peer [plugins/http/http.c line 917]
+Not Found: /hudson
+Not Found: /solr/admin/info/system
+Not Found: /index.php
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /manager/text/list
+Not Found: /http:/134.175.189.199:8001/
+Not Found: /solr/admin/info/system
+Not Found: /index.php
+Not Found: /robots.txt
+Not Found: /portal/redlion
+Not Found: /robots.txt
+Not Found: /index.php
+Not Found: /thinkphp_5.0.21/
+Not Found: /thinkphp_5.0.21/
+Not Found: /echo.php
+Not Found: /manager/html
+Not Found: /elrekt.php
+Not Found: /TP/public/index.php
+Not Found: /solr/admin/info/system
+Not Found: /index.php
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /Telerik.Web.UI.WebResource.axd
+Not Found: /sdk
+Not Found: /nmaplowercheck1585035036
+Not Found: /HNAP1
+Not Found: /evox/about
+Not Found: /TP/public/index.php
+Not Found: /TP/index.php
+Not Found: /thinkphp/html/public/index.php
+Not Found: /html/public/index.php
+Not Found: /public/index.php
+Not Found: /TP/html/public/index.php
+Not Found: /elrekt.php
+Not Found: /index.php
+Not Found: /TP/public/index.php
+Not Found: /TP/index.php
+Not Found: /thinkphp/html/public/index.php
+Not Found: /html/public/index.php
+Not Found: /public/index.php
+Not Found: /TP/html/public/index.php
+Not Found: /elrekt.php
+Not Found: /index.php
+Not Found: /phpmyadmin/
+Not Found: /phpmyadmin/
+Not Found: /pmd/
+Not Found: /pmd/
+Not Found: /pma/
+Not Found: /pma/
+Not Found: /phpmyadmin4.8.5/
+Not Found: /phpmyadmin4.8.5/
+Not Found: /robots.txt
+Not Found: /portal/redlion
+Not Found: /api/jsonws/invoke
+Not Found: /index.php
+Not Found: /9f7a66bf852e4751eff1cf45eaaa0efb.php
+Not Found: /D39EBD89A8056D9040A287EADBFE1008.php
+Not Found: /e76c100d36e4f938ae6623b584c6dd00.php
+Not Found: /phpmyadmin/index.php
+Not Found: /phpMyAdmin/index.php
+Not Found: /evox/about
+Not Found: /robots.txt
+Not Found: /favicon.ico
+Not Found: /HNAP1
+Not Found: /9f7a66bf852e4751eff1cf45eaaa0efb.php
+Not Found: /D39EBD89A8056D9040A287EADBFE1008.php
+Not Found: /e76c100d36e4f938ae6623b584c6dd00.php
+Not Found: /phpmyadmin/index.php
+Not Found: /phpMyAdmin/index.php
+Not Found: /portal/redlion
+Not Found: /Module/AppManager/GameGameItemList.aspx
+Not Found: /solr/
+Not Found: /TP/public/index.php
+Not Found: /TP/index.php
+Not Found: /thinkphp/html/public/index.php
+Not Found: /html/public/index.php
+Not Found: /public/index.php
+Not Found: /TP/html/public/index.php
+Not Found: /elrekt.php
+Not Found: /index.php
+Not Found: /ReportServer
+Not Found: /solr/admin/info/system
+Not Found: /index.php
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /TP/public/index.php
+Not Found: /TP/index.php
+Not Found: /thinkphp/html/public/index.php
+Not Found: /html/public/index.php
+Not Found: /public/index.php
+Not Found: /TP/html/public/index.php
+Not Found: /elrekt.php
+Not Found: /index.php
+Not Found: /phpmyadmin/index.php
+Not Found: /w00tw00t.at.blackhats.romanian.anti-sec:)
+Not Found: /phpMyAdmin/scripts/setup.php
+Not Found: /phpmyadmin/scripts/setup.php
+Not Found: /pma/scripts/setup.php
+Not Found: /myadmin/scripts/setup.php
+Not Found: /MyAdmin/scripts/setup.php
+Not Found: /index.php
+Not Found: /phpmyadmin/
+Not Found: /TP/public/index.php
+Not Found: /phpmyadmin
+Not Found: /phpmyadmin
+Not Found: /portal/redlion
+Not Found: /w00tw00t.at.blackhats.romanian.anti-sec:)
+Not Found: /phpMyAdmin/scripts/setup.php
+Not Found: /phpmyadmin/scripts/setup.php
+Not Found: /pma/scripts/setup.php
+Not Found: /myadmin/scripts/setup.php
+Not Found: /MyAdmin/scripts/setup.php
+Not Found: /TP/public/index.php
+Not Found: /TP/index.php
+Not Found: /thinkphp/html/public/index.php
+Not Found: /html/public/index.php
+Not Found: /TP/public/index.php
+Not Found: /TP/index.php
+Not Found: /thinkphp/html/public/index.php
+Not Found: /html/public/index.php
+Not Found: /public/index.php
+Not Found: /TP/html/public/index.php
+Not Found: /elrekt.php
+Not Found: /index.php
+Not Found: /TP/public/index.php
+Not Found: /TP/index.php
+Not Found: /thinkphp/html/public/index.php
+Not Found: /html/public/index.php
+Not Found: /public/index.php
+Not Found: /TP/html/public/index.php
+Not Found: /elrekt.php
+Not Found: /index.php
+Not Found: /manager/html
+Not Found: /TP/public/index.php
+Not Found: /TP/index.php
+Not Found: /thinkphp/html/public/index.php
+Not Found: /html/public/index.php
+Not Found: /public/index.php
+Not Found: /TP/html/public/index.php
+Not Found: /elrekt.php
+Not Found: /index.php
+Not Found: /w00tw00t.at.blackhats.romanian.anti-sec:)
+Not Found: /phpMyAdmin/scripts/setup.php
+Not Found: /phpmyadmin/scripts/setup.php
+Not Found: /pma/scripts/setup.php
+Not Found: /wp/xmlrpc.php
+Not Found: /wordpress/xmlrpc.php
+Not Found: /blog/xmlrpc.php
+Not Found: /xmlrpc.php
+Not Found: /favicon.ico
+Not Found: /portal/redlion
+Not Found: /index.php
+Not Found: /phpmyadmin/index.php
+Not Found: /manager/html
+Not Found: /robots.txt
+Not Found: /favicon.ico
+Not Found: /xmlrpc.php
+Not Found: /blog/xmlrpc.php
+Not Found: /blog/xmlrpc.php
+Not Found: /xmlrpc.php
+Not Found: /w00tw00t.at.blackhats.romanian.anti-sec:)
+Not Found: /phpmyadmin/scripts/setup.php
+Not Found: /phpMyAdmin/scripts/setup.php
+Not Found: /mysqladmin/scripts/setup.php
+Not Found: /PMA2012/scripts/setup.php
+Not Found: /pma2012/scripts/setup.php
+Not Found: /PMA2011/scripts/setup.php
+Not Found: /pma2011/scripts/setup.php
+Not Found: /PMA2013/scripts/setup.php
+Not Found: /pma2013/scripts/setup.php
+Not Found: /PMA2014/scripts/setup.php
+Not Found: /pma2014/scripts/setup.php
+Not Found: /PMA2015/scripts/setup.php
+Not Found: /pma2015/scripts/setup.php
+Not Found: /PMA2016/scripts/setup.php
+Not Found: /pma2016/scripts/setup.php
+Not Found: /phpmyadmin2/scripts/setup.php
+Not Found: /phpmyadmin4/scripts/setup.php
+Not Found: /phpmyadmin5/scripts/setup.php
+Not Found: /phpmyadmin6/scripts/setup.php
+Not Found: /phpmyadmin7/scripts/setup.php
+Not Found: /pma/scripts/setup.php
+Not Found: /myadmin/scripts/setup.php
+Not Found: /MyAdmin/scripts/setup.php
+Not Found: /mysql/scripts/setup.php
+Not Found: /phpMyAdmin-2.10.0.0/scripts/setup.php
+Not Found: /phpMyAdmin-2.11.11/scripts/setup.php
+Not Found: /phpMyAdmin-2.11.11.3/scripts/setup.php
+Not Found: /phpMyAdmin-3.0.0.0-all-languages/scripts/setup.php
+Not Found: /dbadmin/scripts/setup.php
+Not Found: /db/scripts/setup.php
+Not Found: /scripts/setup.php
+Not Found: /phpMyAdmin-2/scripts/setup.php
+Not Found: /mysql/scripts/setup.php
+Not Found: /api/statistics/service-usage-amount
+Not Found: /source/pack/upload/install/ios.php
+Not Found: /Report.docx
+Not Found: /hudson
+Not Found: /w00tw00t.at.blackhats.romanian.anti-sec:)
+Not Found: /phpMyAdmin/scripts/setup.php
+Not Found: /pma/scripts/setup.php
+Not Found: /myadmin/scripts/setup.php
+Not Found: /MyAdmin/scripts/setup.php
+Not Found: /robots.txt
+Not Found: /manager/html
+Not Found: /robots.txt
+Not Found: /portal/redlion
+Not Found: /TP/public/index.php
+Not Found: /TP/index.php
+Not Found: /thinkphp/html/public/index.php
+Not Found: /html/public/index.php
+Not Found: /public/index.php
+Not Found: /TP/html/public/index.php
+Not Found: /elrekt.php
+Not Found: /index.php
+Not Found: /webdav/
+Not Found: /TP/public/index.php
+Not Found: /index.php
+Not Found: /http:/134.175.189.199:8001/
+Not Found: /hazelcast/rest/cluster
+Not Found: /api
+Not Found: /nice ports,/Trinity.txt.bak
+Not Found: /phpmyadmin/
+Not Found: /api
+Not Found: /nice ports,/Trinity.txt.bak
+Not Found: /hazelcast/rest/cluster
+Not Found: /phpmyadmin/
+Not Found: /solr/admin/info/system
+Not Found: /index.php
+Not Found: /portal/redlion
+Not Found: /nice ports,/Trinity.txt.bak
+[uwsgi-http key:  client_addr: 106.53.193.234 client_port: 45744] hr_read(): Connection reset by peer [plugins/http/http.c line 917]
+[uwsgi-http key:  client_addr: 106.53.193.234 client_port: 53444] hr_read(): Connection reset by peer [plugins/http/http.c line 917]
+[uwsgi-http key:  client_addr: 106.53.193.234 client_port: 25829] hr_read(): Connection reset by peer [plugins/http/http.c line 917]
+[uwsgi-http key:  client_addr: 106.53.193.234 client_port: 44182] hr_read(): Connection reset by peer [plugins/http/http.c line 917]
+[uwsgi-http key:  client_addr: 106.53.193.234 client_port: 9894] hr_read(): Connection reset by peer [plugins/http/http.c line 917]
+[uwsgi-http key:  client_addr: 106.53.193.234 client_port: 14008] hr_read(): Connection reset by peer [plugins/http/http.c line 917]
+[uwsgi-http key:  client_addr: 106.53.193.234 client_port: 61655] hr_read(): Connection reset by peer [plugins/http/http.c line 917]
+Not Found: /echo.php
+Not Found: /index.php
+Not Found: /index.php
+Not Found: /phpmyadmin/index.php
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /manager/html
+Not Found: /hudson
+Not Found: /GponForm/diag_Form
+Not Found: /index.php
+Not Found: /cgi-bin/mainfunction.cgi
+Not Found: /cgi-bin/mainfunction.cgi
+Not Found: /cgi-bin/mainfunction.cgi
+Not Found: /hudson
+Not Found: /cgi-bin/mainfunction.cgi
+Not Found: /dede/
+Not Found: /TP/public/index.php
+Not Found: /TP/index.php
+Not Found: /thinkphp/html/public/index.php
+Not Found: /html/public/index.php
+Not Found: /public/index.php
+Not Found: /TP/html/public/index.php
+Not Found: /elrekt.php
+Not Found: /index.php
+Not Found: /TP/public/index.php
+Not Found: /cgi-bin/mainfunction.cgi
+Not Found: /robots.txt
+Not Found: /TP/public/index.php
+Not Found: /TP/index.php
+Not Found: /thinkphp/html/public/index.php
+Not Found: /html/public/index.php
+Not Found: /public/index.php
+Not Found: /TP/html/public/index.php
+Not Found: /elrekt.php
+Not Found: /index.php
+Not Found: /phpmyadmin/index.php
+Not Found: /phpMyadmin/index.php
+Not Found: /phpMyAdmin/index.php
+Not Found: /phpMyAdmin/index.php
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 22873)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Apr  1 21:28:54 2020] ***
+compiled with version: 7.4.0 on 10 February 2020 10:53:21
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-0-7-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/cevrs/cevrs
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/cevrs/cevrs/
+your processes number limit is 7080
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :8001 fd 3
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 6
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Nov  7 2019, 10:44:02)  [GCC 8.3.0]
+Python main interpreter initialized at 0x556056747320
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x556056747320 pid: 25388 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 25388)
+spawned uWSGI worker 1 (pid: 25394, cores: 2)
+spawned uWSGI worker 2 (pid: 25395, cores: 2)
+spawned uWSGI worker 3 (pid: 25396, cores: 2)
+spawned uWSGI worker 4 (pid: 25397, cores: 2)
+spawned uWSGI http 1 (pid: 25398)
+[uwsgi-http key: 134.175.189.199:8001 client_addr: 223.150.254.159 client_port: 10008] hr_write(): Broken pipe [plugins/http/http.c line 565]
+uwsgi_response_sendfile_do() TIMEOUT !!!
+OSError: write error
+SIGINT/SIGQUIT received...killing workers...
+gateway "uWSGI http 1" has been buried (pid: 25398)
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+goodbye to uWSGI.
+*** Starting uWSGI 2.0.18 (64bit) on [Wed Apr  1 21:38:05 2020] ***
+compiled with version: 7.4.0 on 10 February 2020 10:53:21
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-0-7-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/cevrs/cevrs
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/cevrs/cevrs/
+your processes number limit is 7080
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uWSGI http bound on :8001 fd 3
+uwsgi socket 0 bound to TCP address 127.0.0.1:8000 fd 6
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+Python version: 3.6.9 (default, Nov  7 2019, 10:44:02)  [GCC 8.3.0]
+Python main interpreter initialized at 0x55cb95558320
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55cb95558320 pid: 26775 (default app)
+uWSGI running as root, you can use --uid/--gid/--chroot options
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 26775)
+spawned uWSGI worker 1 (pid: 26781, cores: 2)
+spawned uWSGI worker 2 (pid: 26782, cores: 2)
+spawned uWSGI worker 3 (pid: 26783, cores: 2)
+spawned uWSGI worker 4 (pid: 26784, cores: 2)
+spawned uWSGI http 1 (pid: 26785)
+Not Found: /static/css/bootstrap.min.css.map
+uwsgi_response_sendfile_do() TIMEOUT !!!
+OSError: write error
