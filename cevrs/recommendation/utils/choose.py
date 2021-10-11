@@ -70,6 +70,7 @@ def assess_school(schools, rank, kind, risk_number, surely_number, def_number, t
     for school in selected_schools:
         # 首先通过学校的名称和满足rank的排名来获取学习的编号和批次
         # 这里是因为有些学校的编号一致而批次不一样或者是学校名称一样但是录取的分数线同一年有多个
+        print(school)
         school_infos = grade_template.get_school_info(school, rank, kind)
         school_clazz = school_infos[0].clazz
         school_number = school_infos[0].number
@@ -171,26 +172,28 @@ def assess_school(schools, rank, kind, risk_number, surely_number, def_number, t
     surely_dict = sorted(surely_dict.items(), key=lambda x: x[1], reverse=False)
     definite_dict = sorted(definite_dict.items(), key=lambda x: x[1], reverse=False)
 
-    risky_list = []
-    surely_list = []
-    definite_list = []
-    for key in riskly_dict:
-        risky_list.append(key)
-    for key in surely_dict:
-        surely_list.append(key)
-    for key in definite_dict:
-        definite_list.append(key)
-    if len(risky_list) > 0:
-        risk_a, risk_c, risk_h, risk_r = compute_results(rank, risky_list)
-        print(risk_a, risk_c, risk_h, risk_r)
-    if len(surely_list) > 0:
-        surely_a, surely_c, surely_h, surely_r = compute_results(rank, surely_list)
-        print(surely_a, surely_c, surely_h, surely_r)
-    if len(definite_list) > 0:
-        definite_a, definite_c, definite_h, definite_r = compute_results(rank, definite_list)
-        print(definite_a, definite_c, definite_h, definite_r)
-    print(risky_list, surely_list, definite_list)
-    print(len(risky_list), len(surely_list), len(definite_list))
+    print(riskly_dict, surely_dict, definite_dict)
+
+    # risky_list = []
+    # surely_list = []
+    # definite_list = []
+    # for key in riskly_dict:
+    #     risky_list.append(key)
+    # for key in surely_dict:
+    #     surely_list.append(key)
+    # for key in definite_dict:
+    #     definite_list.append(key)
+    # if len(risky_list) > 0:
+    #     risk_a, risk_c, risk_h, risk_r = compute_results(rank, risky_list)
+    #     print(risk_a, risk_c, risk_h, risk_r)
+    # if len(surely_list) > 0:
+    #     surely_a, surely_c, surely_h, surely_r = compute_results(rank, surely_list)
+    #     print(surely_a, surely_c, surely_h, surely_r)
+    # if len(definite_list) > 0:
+    #     definite_a, definite_c, definite_h, definite_r = compute_results(rank, definite_list)
+    #     print(definite_a, definite_c, definite_h, definite_r)
+    # print(risky_list, surely_list, definite_list)
+    # print(len(risky_list), len(surely_list), len(definite_list))
 
 
 
@@ -201,15 +204,20 @@ def assess_school(schools, rank, kind, risk_number, surely_number, def_number, t
     # 如果数目不够，就去找上面那个去借，再删除掉,避免重复
     # 所以将最远离目标的target的值借到上一个等级
 
+    if len(surely_dict) < surely_number:
+        for i in range(0, surely_number - len(surely_dict)):
+            surely_dict.append(definite_dict[0])
+            del definite_dict[0]
+
     if len(riskly_dict) < risk_number:
         for i in range(0, risk_number - len(riskly_dict)):
-            riskly_dict.append(surely_dict[i])
-            del surely_dict[i]
+            riskly_dict.append(surely_dict[0])
+            del surely_dict[0]
 
     if len(surely_dict) < surely_number:
         for i in range(0, surely_number - len(surely_dict)):
-            surely_dict.append(definite_dict[i])
-            del definite_dict[i]
+            surely_dict.append(definite_dict[0])
+            del definite_dict[0]
 
     if len(definite_dict) < def_number:
         for i in range(0, def_number - len(definite_dict)):
@@ -284,6 +292,8 @@ def assess_school(schools, rank, kind, risk_number, surely_number, def_number, t
 
     for i in range(0, def_number):
         definite_results.append(definite_dict[i])
+
+    print(riskly_results, surely_results, definite_results)
 
     return riskly_results, surely_results, definite_results
         
@@ -397,16 +407,16 @@ def classify(school_grade_list, school_names, num1, num2):
     return kind1, kind2, kind3, kind_num1, kind_num2
 
 
-def compute_results(target, school_list):
-    a = 0
-    c = 0
-    grade2019 = pd.read_csv("D:\Evolution\湖南省2019年理科一本二本各高校录取分数线与排名.csv", index_col=False, encoding='utf_8_sig')
-    for s in school_list:
-        # print(grade2019['rank'][grade2019['院校名称'] == s[0]].values)
-        if grade2019['rank'][grade2019['院校名称'] == s[0]].values.any():
-            rank = grade2019['rank'][grade2019['院校名称'] == s[0]].values[0]
-            if rank > target:
-                a += 1
-                if (rank-target)/target < 0.1:
-                    c += 1
-    return a, c, a/len(school_list), c/len(school_list)
+# def compute_results(target, school_list):
+#     a = 0
+#     c = 0
+#     grade2019 = pd.read_csv("D:\Evolution\湖南省2019年理科一本二本各高校录取分数线与排名.csv", index_col=False, encoding='utf_8_sig')
+#     for s in school_list:
+#         # print(grade2019['rank'][grade2019['院校名称'] == s[0]].values)
+#         if grade2019['rank'][grade2019['院校名称'] == s[0]].values.any():
+#             rank = grade2019['rank'][grade2019['院校名称'] == s[0]].values[0]
+#             if rank > target:
+#                 a += 1
+#                 if (rank-target)/target < 0.1:
+#                     c += 1
+#     return a, c, a/len(school_list), c/len(school_list)

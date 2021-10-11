@@ -108,7 +108,7 @@ class GradeAll(models.Model):
     clazz = models.CharField(max_length=10, blank=True, null=True)
 
     def get_fifty_schools(self, kind, rank):
-        schools = GradeAll.objects.raw("SELECT * FROM grade_all WHERE kind = %s AND rank > %s "
+        schools = GradeAll.objects.raw("SELECT * FROM grade_all WHERE kind = %s AND year>2015 AND rank > %s "
                                        "GROUP BY school ORDER BY rank LIMIT 50", [kind, rank])
         return schools
 
@@ -117,7 +117,7 @@ class GradeAll(models.Model):
         schooltmp = GradeAll.objects.filter(Q(school=school), Q(rank__gt=rank)).first()
         clazz = schooltmp.clazz
         school_num = schooltmp.number
-        school_info = GradeAll.objects.filter(Q(number=school_num), Q(kind=kind), Q(clazz=clazz), Q(year__range=[2014, 2018]))
+        school_info = GradeAll.objects.filter(Q(number=school_num), Q(kind=kind), Q(clazz=clazz), Q(year__gt=2015))
         return school_info
 
     def get_school_number(self, school, kind):
@@ -131,7 +131,7 @@ class GradeAll(models.Model):
 
     def get_school_ranks(self, school, kind, school_number):
         ranks = []
-        schools = GradeAll.objects.filter(Q(school=school), Q(kind=kind), Q(number=school_number), Q(year__range=[2014, 2018]))
+        schools = GradeAll.objects.filter(Q(school=school), Q(kind=kind), Q(number=school_number), Q(year__gt=2015))
         for school in schools:
             ranks.append(school.rank)
         return ranks
@@ -164,7 +164,8 @@ class GradeLine(models.Model):
 
 
 class RankLine(models.Model):
-    field_school = models.TextField(db_column='\ufeffschool', blank=True, null=True)  # Field renamed to remove unsuitable characters. Field renamed because it started with '_'.
+    field_school = models.TextField(db_column='\ufeffschool', blank=True, null=True)
+    # Field renamed to remove unsuitable characters. Field renamed because it started with '_'.
     kind = models.TextField(blank=True, null=True)
     year = models.IntegerField(blank=True, null=True)
     grade = models.BigIntegerField(blank=True, null=True)
