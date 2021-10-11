@@ -96,7 +96,7 @@ DATABASES = {
         'PORT': 3306,
         'USER': 'root',
         'PASSWORD': '950305',
-        'NAME': 'evolution',
+        'NAME': 'cevrs',
     }
 }
 
